@@ -7,6 +7,7 @@ public class TagDamage : MonoBehaviour
     public GameObject LinkDamage;
     float dmg = 25;
     RoomsBehavior Phealth;
+    bool water = false;
 
 	// Use this for initialization
 	void Start ()
@@ -17,13 +18,24 @@ public class TagDamage : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-		
+		if (water == true)
+        {
+            if (Phealth.waterLevel >= 0)
+            {
+                Phealth.waterLevel += Time.deltaTime;
+            }
+            else
+            {
+                water = false;
+            }
+        }
 	}
 
     void ApplyDamage ()
     {
         Phealth = LinkDamage.GetComponent<RoomsBehavior>();
         Phealth.health -= 25;
+        water = true;
     }
 
 
