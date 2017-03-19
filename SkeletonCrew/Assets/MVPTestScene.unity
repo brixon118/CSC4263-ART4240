@@ -134,6 +134,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1.7129465
       objectReference: {fileID: 0}
+    - target: {fileID: 1128767735614720, guid: a75d563a0045fc84d9b1d199e9859d40, type: 2}
+      propertyPath: m_TagString
+      value: Hallway-FrontToRight
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a75d563a0045fc84d9b1d199e9859d40, type: 2}
   m_IsPrefabParent: 0
@@ -181,9 +185,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1335740723134866, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
+      propertyPath: m_TagString
+      value: Room-Back
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &124723799 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1335740723134866, guid: f3f92d41253666243ba1dd6bcd316f0e,
+    type: 2}
+  m_PrefabInternal: {fileID: 897199548}
 --- !u!1001 &168044638
 Prefab:
   m_ObjectHideFlags: 0
@@ -222,6 +235,10 @@ Prefab:
     - target: {fileID: 4871080400825254, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335740723134866, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
+      propertyPath: m_TagString
+      value: Room-Right
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
@@ -537,6 +554,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &233758656 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1335740723134866, guid: f3f92d41253666243ba1dd6bcd316f0e,
+    type: 2}
+  m_PrefabInternal: {fileID: 2056010909}
 --- !u!1001 &409627414
 Prefab:
   m_ObjectHideFlags: 0
@@ -584,6 +606,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 0.4466191
       objectReference: {fileID: 0}
+    - target: {fileID: 1128767735614720, guid: a75d563a0045fc84d9b1d199e9859d40, type: 2}
+      propertyPath: m_TagString
+      value: Hallway-RightToLeft
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a75d563a0045fc84d9b1d199e9859d40, type: 2}
   m_IsPrefabParent: 0
@@ -592,6 +618,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4589100864573696, guid: a75d563a0045fc84d9b1d199e9859d40,
     type: 2}
   m_PrefabInternal: {fileID: 409627414}
+--- !u!1 &468370682 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1335740723134866, guid: f3f92d41253666243ba1dd6bcd316f0e,
+    type: 2}
+  m_PrefabInternal: {fileID: 74015800}
 --- !u!1001 &472073901
 Prefab:
   m_ObjectHideFlags: 0
@@ -646,6 +677,45 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 30155b1de68f5f043a3e816c1c261691, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &622430129 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1564459433954568, guid: 30155b1de68f5f043a3e816c1c261691,
+    type: 2}
+  m_PrefabInternal: {fileID: 2117757152}
+--- !u!114 &622430130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 622430129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47aa27949296ddf4bb5ba0897c53aee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LinkDamage: {fileID: 2065521507}
+--- !u!1 &639607637 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1564459433954568, guid: 30155b1de68f5f043a3e816c1c261691,
+    type: 2}
+  m_PrefabInternal: {fileID: 1511034074}
+--- !u!114 &639607641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 639607637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f722e1e3790d5b42ba29742b0b7ceb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LinkDamage: {fileID: 124723799}
+--- !u!1 &669577213 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1335740723134866, guid: f3f92d41253666243ba1dd6bcd316f0e,
+    type: 2}
+  m_PrefabInternal: {fileID: 168044638}
 --- !u!1001 &673798736
 Prefab:
   m_ObjectHideFlags: 0
@@ -730,6 +800,10 @@ Prefab:
     - target: {fileID: 1335740723134866, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
       propertyPath: m_Name
       value: Room (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335740723134866, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
+      propertyPath: m_TagString
+      value: Room-Front
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
@@ -874,11 +948,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4785135672663874, guid: e306bb0a15a7b114ca645907e39f84ec, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -9.03
+      value: -0.04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e306bb0a15a7b114ca645907e39f84ec, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1399740785 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1564459433954568, guid: 30155b1de68f5f043a3e816c1c261691,
+    type: 2}
+  m_PrefabInternal: {fileID: 1752136108}
+--- !u!114 &1399740786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1399740785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f722e1e3790d5b42ba29742b0b7ceb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LinkDamage: {fileID: 669577213}
 --- !u!1 &1417281189
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,6 +981,7 @@ GameObject:
   - component: {fileID: 1417281191}
   - component: {fileID: 1417281190}
   - component: {fileID: 1417281194}
+  - component: {fileID: 1417281195}
   - component: {fileID: 1417281193}
   m_Layer: 0
   m_Name: AOECheck
@@ -1082,8 +1174,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1417281189}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.71, y: -6.01, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 0}
+  m_LocalPosition: {x: 2.38, y: -1.91, z: -1}
+  m_LocalScale: {x: 0.41869804, y: 0.38744536, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1097,11 +1189,11 @@ Rigidbody2D:
   m_GameObject: {fileID: 1417281189}
   m_BodyType: 0
   m_Simulated: 1
-  m_UseFullKinematicContacts: 1
+  m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0
+  m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -1121,6 +1213,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WhenLand: 0
   AOERadius: 0.6
+--- !u!114 &1417281195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1417281189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83eda040067bdeb408f4f14f23a1868b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerNumber: 1
+  speed: 2
+  controlled: 1
 --- !u!1001 &1511034074
 Prefab:
   m_ObjectHideFlags: 0
@@ -1307,6 +1413,23 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 30155b1de68f5f043a3e816c1c261691, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1805613000 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1564459433954568, guid: 30155b1de68f5f043a3e816c1c261691,
+    type: 2}
+  m_PrefabInternal: {fileID: 1576986117}
+--- !u!114 &1805613004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1805613000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f722e1e3790d5b42ba29742b0b7ceb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LinkDamage: {fileID: 468370682}
 --- !u!1001 &2056010909
 Prefab:
   m_ObjectHideFlags: 0
@@ -1350,6 +1473,15 @@ Prefab:
       propertyPath: m_Name
       value: Room (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1335740723134866, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
+      propertyPath: m_TagString
+      value: Room-Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 114593648980012340, guid: f3f92d41253666243ba1dd6bcd316f0e,
+        type: 2}
+      propertyPath: thinging
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
   m_IsPrefabParent: 0
@@ -1358,6 +1490,28 @@ Transform:
   m_PrefabParentObject: {fileID: 4871080400825254, guid: f3f92d41253666243ba1dd6bcd316f0e,
     type: 2}
   m_PrefabInternal: {fileID: 2056010909}
+--- !u!1 &2059988401 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1564459433954568, guid: 30155b1de68f5f043a3e816c1c261691,
+    type: 2}
+  m_PrefabInternal: {fileID: 673798736}
+--- !u!114 &2059988405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2059988401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f722e1e3790d5b42ba29742b0b7ceb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LinkDamage: {fileID: 233758656}
+--- !u!1 &2065521507 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1128767735614720, guid: a75d563a0045fc84d9b1d199e9859d40,
+    type: 2}
+  m_PrefabInternal: {fileID: 52020306}
 --- !u!1001 &2082057956
 Prefab:
   m_ObjectHideFlags: 0
@@ -1404,6 +1558,10 @@ Prefab:
     - target: {fileID: 1128767735614720, guid: a75d563a0045fc84d9b1d199e9859d40, type: 2}
       propertyPath: m_Name
       value: Hallway (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1128767735614720, guid: a75d563a0045fc84d9b1d199e9859d40, type: 2}
+      propertyPath: m_TagString
+      value: Hallway-LeftToBack
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a75d563a0045fc84d9b1d199e9859d40, type: 2}

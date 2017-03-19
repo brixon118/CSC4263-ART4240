@@ -9,6 +9,7 @@ public class RoomsBehavior : MonoBehaviour {
     public float waterLevel = 0;
     public int playerControlled = 0;
     private PlayersController playerController;
+    public GameObject thinging;
 
 	// Use this for initialization
 	void Start () {

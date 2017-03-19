@@ -23,8 +23,45 @@ public class AOEProjDmg : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    public class RoomsBehavior : MonoBehaviour
     {
-        Physics.OverlapSphere(BallisticProjectilePosition, AOERadius);
+        void OnCollisionStay2D(Collision2D col)
+        {
+            if (col.gameObject.tag == "Hallway-FrontToRight")
+            {
+                col.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
+            }
+            if (col.gameObject.tag == "Hallway-RightToLeft")
+            {
+                col.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
+            }
+            if (col.gameObject.tag == "Hallway-LeftToBack")
+            {
+                col.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
+            }
+            if (col.gameObject.tag == "Room-Front")
+            {
+                col.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
+            }
+            if (col.gameObject.tag == "Room-Right")
+            {
+                col.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
+            }
+            if (col.gameObject.tag == "Room-Left")
+            {
+                col.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
+            }
+            if (col.gameObject.tag == "Room-Back")
+            {
+                col.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
+            }
+            //col.gameObject.SendMessage("ApplyDamage", 10);
+
+        }
     }
+
+    //void OnCollisionEnter2D(Collision2D col)
+    //{
+    //    Physics.OverlapSphere(BallisticProjectilePosition, AOERadius);
+    //}
 }
