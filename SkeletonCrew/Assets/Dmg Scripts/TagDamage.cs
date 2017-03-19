@@ -5,20 +5,22 @@ using UnityEngine;
 public class TagDamage : MonoBehaviour
 {
     public GameObject LinkDamage;
-    float dmg = 25;
+    //float dmg = 25;
     RoomsBehavior Phealth;
-    bool water = false;
+    //bool water = false;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start()
     {
-		
-	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    }
+
+    // Update is called once per frame
+    void Update()
     {
-		if (water == true)
+        //moved to RoomsBehavior
+
+        /*if (water == true)
         {
             if (Phealth.waterLevel >= 0)
             {
@@ -28,14 +30,14 @@ public class TagDamage : MonoBehaviour
             {
                 water = false;
             }
-        }
-	}
+        }*/
+    }
 
-    void ApplyDamage ()
+    public void ApplyDamage(float dmg)
     {
         Phealth = LinkDamage.GetComponent<RoomsBehavior>();
-        Phealth.health -= 25;
-        water = true;
+        Phealth.health -= dmg;
+        //water = true;
     }
 
 

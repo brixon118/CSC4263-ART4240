@@ -7,41 +7,23 @@ public class RoomsBehavior : MonoBehaviour {
     public float health = 100;
     public float maxWaterLevel = 100;
     public float waterLevel = 0;
-    public int playerControlled = 0;
-    private PlayersController playerController;
-    public GameObject thinging;
 
 	// Use this for initialization
 	void Start () {
-        
+        InvokeRepeating("UpdateEverySecond", 0, 1.0f);
     }
 	
 	// Update is called once per frame
 	void Update () {
-        
 
     }
 
-
-    void OnTriggerStay2D(Collider2D other) {
-        health--;
-        if( other.CompareTag("PlayerCharacter"))
+    // Updates every second
+    void UpdateEverySecond()
+    {
+        if (health <= (maxHealth / 2) && !(waterLevel >= maxWaterLevel))
         {
-            if (Input.GetButtonUp("Jump"))
-            {
-                playerController = other.gameObject.GetComponent<PlayersController>();
-                if(playerControlled == 0)
-                {
-                    playerControlled = playerController.playerNumber;
-                    playerController.switchControlled();
-                }
-                else if (playerControlled == playerController.playerNumber)
-                {
-                    playerControlled = 0;
-                    playerController.switchControlled();
-                }
-            }
+            waterLevel++;
         }
     }
-
 }

@@ -4,64 +4,37 @@ using UnityEngine;
 
 public class AOEProjDmg : MonoBehaviour
 {
-    public bool WhenLand = false;  //True when ballistic lands, else false
     Vector3 BallisticProjectilePosition;
     public float AOERadius = 0.6f;
+    Transform trans;
+    public float dmg = 25;
 
     // Use this for initialization
     void Start()
     {
-
+        trans = GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (WhenLand == true)
+        if(trans.position.z <= 0)
         {
-            WhenLand = false;
+            //Vector2 currentPosition = trans.position;
+            AoeApplyDamage(trans.position, AOERadius, dmg);
         }
+        
     }
 
-    public class RoomsBehavior : MonoBehaviour
+    void AoeApplyDamage(Vector2 loc, float radius, float dmg)
     {
-        void OnCollisionStay2D(Collision2D col)
+        Collider2D[] objectsInRange = Physics2D.OverlapCircleAll(loc, radius);
+        foreach (Collider2D col in objectsInRange)
         {
-            if (col.gameObject.tag == "Hallway-FrontToRight")
+            if (col.CompareTag("RoomCollider"))
             {
-                col.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
+                col.GetComponent<TagDamage>().ApplyDamage(dmg);
             }
-            if (col.gameObject.tag == "Hallway-RightToLeft")
-            {
-                col.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-            }
-            if (col.gameObject.tag == "Hallway-LeftToBack")
-            {
-                col.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-            }
-            if (col.gameObject.tag == "Room-Front")
-            {
-                col.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-            }
-            if (col.gameObject.tag == "Room-Right")
-            {
-                col.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-            }
-            if (col.gameObject.tag == "Room-Left")
-            {
-                col.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-            }
-            if (col.gameObject.tag == "Room-Back")
-            {
-                col.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
-            }
-            //col.gameObject.SendMessage("ApplyDamage", 10);
-
         }
     }
-
-    //void OnCollisionEnter2D(Collision2D col)
-    //{
-    //    Physics.OverlapSphere(BallisticProjectilePosition, AOERadius);
-    //}
 }

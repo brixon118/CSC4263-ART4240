@@ -5,6 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - PlayerCharacter
+  - Hallway-FrontToRight
+  - Room-Back
+  - Room-Right
+  - Hallway-RightToLeft
+  - Room-Front
+  - Room-Left
+  - Hallway-LeftToBack
+  - Room
+  - RoomCollider
   layers:
   - Default
   - TransparentFX

@@ -7,7 +7,7 @@ public class TagDamageHallway : MonoBehaviour
     public GameObject LinkDamage;
     float dmg = 25;
     HallwayBehavior Phealth;
-    bool water = false;
+    //bool water = false;
 
     // Use this for initialization
     void Start()
@@ -18,7 +18,9 @@ public class TagDamageHallway : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (water == true)
+        //moved to HallwayBehavior
+
+        /*if (water == true)
         {
             if (Phealth.waterLevel >= 0)
             {
@@ -28,14 +30,14 @@ public class TagDamageHallway : MonoBehaviour
             {
                 water = false;
             }
-        }
+        }*/
     }
 
     void ApplyDamage()
     {
         Phealth = LinkDamage.GetComponent<HallwayBehavior>();
         Phealth.health -= 25;
-        water = true;
+        //water = true;
     }
 
 
