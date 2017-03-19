@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class THEFrontRoomHealthDisplay : MonoBehaviour
+public class FrontRoomWaterDisplay : MonoBehaviour
 {
-    public GameObject HealthDisplay;
+    public GameObject WaterDisplay;
     public static Text textie;
     private RoomsBehavior roomie;
 
@@ -18,6 +18,6 @@ public class THEFrontRoomHealthDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        textie.text = " " + HealthDisplay.GetComponent<RoomsBehavior>().health;
+        textie.text = " " + WaterDisplay.GetComponent<RoomsBehavior>().waterLevel;
     }
 }

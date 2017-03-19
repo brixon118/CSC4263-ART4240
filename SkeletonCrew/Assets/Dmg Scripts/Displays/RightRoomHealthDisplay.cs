@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class THEFrontRoomHealthDisplay : MonoBehaviour
+public class RightRoomHealthDisplay : MonoBehaviour
 {
     public GameObject HealthDisplay;
     public static Text textie;

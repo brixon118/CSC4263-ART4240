@@ -138,6 +138,10 @@ Prefab:
       propertyPath: m_TagString
       value: Hallway-FrontToRight
       objectReference: {fileID: 0}
+    - target: {fileID: 1128767735614720, guid: a75d563a0045fc84d9b1d199e9859d40, type: 2}
+      propertyPath: m_Name
+      value: FrontToBackHallway
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a75d563a0045fc84d9b1d199e9859d40, type: 2}
   m_IsPrefabParent: 0
@@ -188,6 +192,10 @@ Prefab:
     - target: {fileID: 1335740723134866, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
       propertyPath: m_TagString
       value: Room-Back
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335740723134866, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
+      propertyPath: m_Name
+      value: BackRoom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
@@ -326,6 +334,10 @@ Prefab:
     - target: {fileID: 1335740723134866, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
       propertyPath: m_TagString
       value: Room-Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 1335740723134866, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
+      propertyPath: m_Name
+      value: RightRoom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
@@ -991,7 +1003,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1128767735614720, guid: a75d563a0045fc84d9b1d199e9859d40, type: 2}
       propertyPath: m_Name
-      value: Hallway (1)
+      value: RightToLeftHallway
       objectReference: {fileID: 0}
     - target: {fileID: 4589100864573696, guid: a75d563a0045fc84d9b1d199e9859d40, type: 2}
       propertyPath: m_LocalScale.x
@@ -1019,6 +1031,7 @@ GameObject:
   - component: {fileID: 417592256}
   - component: {fileID: 417592258}
   - component: {fileID: 417592257}
+  - component: {fileID: 417592259}
   m_Layer: 5
   m_Name: FrontRoomWater
   m_TagString: Untagged
@@ -1085,6 +1098,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 417592255}
+--- !u!114 &417592259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 417592255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9943ba65982f14c42b69ec723f7f0cf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaterDisplay: {fileID: 124723799}
+  roomie: {fileID: 0}
 --- !u!1 &430523566
 GameObject:
   m_ObjectHideFlags: 0
@@ -1422,7 +1448,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1335740723134866, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
       propertyPath: m_Name
-      value: Room (2)
+      value: FrontRoom
       objectReference: {fileID: 0}
     - target: {fileID: 1335740723134866, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
       propertyPath: m_TagString
@@ -2477,6 +2503,7 @@ GameObject:
   - component: {fileID: 2041227178}
   - component: {fileID: 2041227180}
   - component: {fileID: 2041227179}
+  - component: {fileID: 2041227181}
   m_Layer: 5
   m_Name: FrontRoomHealth
   m_TagString: Untagged
@@ -2541,6 +2568,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2041227177}
+--- !u!114 &2041227181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2041227177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fddb28847a0e2d4eb86929df599a3b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthDisplay: {fileID: 124723799}
 --- !u!1001 &2056010909
 Prefab:
   m_ObjectHideFlags: 0
@@ -2582,7 +2621,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1335740723134866, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
       propertyPath: m_Name
-      value: Room (1)
+      value: LeftRoom
       objectReference: {fileID: 0}
     - target: {fileID: 1335740723134866, guid: f3f92d41253666243ba1dd6bcd316f0e, type: 2}
       propertyPath: m_TagString
@@ -2668,7 +2707,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1128767735614720, guid: a75d563a0045fc84d9b1d199e9859d40, type: 2}
       propertyPath: m_Name
-      value: Hallway (2)
+      value: RightToBackHallway
       objectReference: {fileID: 0}
     - target: {fileID: 1128767735614720, guid: a75d563a0045fc84d9b1d199e9859d40, type: 2}
       propertyPath: m_TagString
