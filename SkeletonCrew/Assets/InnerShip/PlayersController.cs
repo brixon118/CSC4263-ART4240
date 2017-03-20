@@ -10,7 +10,7 @@ public class PlayersController : MonoBehaviour {
     public bool controlled = true;
     private Vector2 velocity;
     public GameObject shipRoot;
-    private int shipNumber = 8;
+    private int shipNumber;
     //public GameObject parentObject;
     // Use this for initialization
     void Start()
