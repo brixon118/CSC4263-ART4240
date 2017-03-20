@@ -5,11 +5,12 @@ using UnityEngine;
 public class SwitchPlayerControls : MonoBehaviour {
     public int playerControlled = 0;
     private PlayersController playerController;
-
+    public GameObject shipRoot;
+    private int shipNumber;
     // Use this for initialization
     void Start () {
-		
-	}
+        shipNumber = shipRoot.GetComponent<ShipNumber>().shipNumber;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -23,7 +24,7 @@ public class SwitchPlayerControls : MonoBehaviour {
         //Switching player control
         if (other.CompareTag("PlayerCharacter"))
         {
-            if (Input.GetButtonUp("Jump"))
+            if (Input.GetButtonUp("LeftBumperController" + ((shipNumber * 2) - 2 + other.GetComponent<PlayersController>().playerNumber)))
             {
                 playerController = other.gameObject.GetComponent<PlayersController>();
                 if (playerControlled == 0)

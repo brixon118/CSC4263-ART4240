@@ -9,10 +9,13 @@ public class PlayersController : MonoBehaviour {
     private Vector2 prevVector;
     public bool controlled = true;
     private Vector2 velocity;
+    public GameObject shipRoot;
+    private int shipNumber = 8;
     //public GameObject parentObject;
     // Use this for initialization
     void Start()
     {
+        shipNumber = shipRoot.GetComponent<ShipNumber>().shipNumber;
 
     }
 
@@ -21,7 +24,7 @@ public class PlayersController : MonoBehaviour {
     {
         if (controlled)
         {
-            velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+            velocity = new Vector2(Input.GetAxis("LeftHorizontalController" + ((shipNumber*2) - 2 + playerNumber)), Input.GetAxis("LeftVerticalController" + ((shipNumber * 2) - 2 + playerNumber)));
             GetComponent<Rigidbody2D>().velocity = (velocity * speed);
             if (!velocity.Equals(Vector2.zero))
             {
@@ -35,5 +38,13 @@ public class PlayersController : MonoBehaviour {
     {
         controlled = !controlled;
         GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        if (controlled)
+        {
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+        }
+        else
+        {
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+        }
     }
 }

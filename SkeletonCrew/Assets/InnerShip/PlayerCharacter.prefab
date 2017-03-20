@@ -91,6 +91,7 @@ MonoBehaviour:
   playerNumber: 1
   speed: 2
   controlled: 1
+  shipRoot: {fileID: 0}
 --- !u!212 &212184026766124390
 SpriteRenderer:
   m_ObjectHideFlags: 1
