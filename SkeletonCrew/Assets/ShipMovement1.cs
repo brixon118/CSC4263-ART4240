@@ -16,17 +16,23 @@ public class ShipMovement1 : MonoBehaviour {
 
     float currentY;
     float currentX;
-    float degggrees;
+    public float degggrees = 1;
     float rotationDirection;
 
     // Use this for initialization
     void Start () {
         shipNumber = shipRoot.GetComponent<ShipNumber>().shipNumber;
         playerControlled = navRoom.GetComponent<SwitchPlayerControls>().playerControlled;
-        currentVector = GetComponent<Rigidbody2D>().velocity.normalized;
+
+        //degggrees = 1;
+
+
+
+
+        /*currentVector = GetComponent<Rigidbody2D>().velocity.normalized;
         currentX = currentVector.x;
         currentY = currentVector.y;
-        degggrees = Mathf.Asin(currentX);
+        degggrees = Mathf.Asin(currentX);*/
     }
 	
 	// Update is called once per frame
@@ -38,13 +44,13 @@ public class ShipMovement1 : MonoBehaviour {
             velocity = new Vector2(Input.GetAxis("LeftHorizontalController" + ((shipNumber * 2) - 2 + playerControlled)), Input.GetAxis("LeftVerticalController" + ((shipNumber * 2) - 2 + playerControlled)));
             float velocityX = velocity.normalized.x;
             float velocityY = velocity.normalized.y;
-            float velocityDegrees = Mathf.Asin(velocityX);
+            float velocityDegrees = Mathf.Atan2(velocityX, velocityY);
 
             if (!(degggrees >= (velocityDegrees - 1) && degggrees <= (velocityDegrees + 1)))
             {
-                currentX = currentVector.x;
-                currentY = currentVector.y;
-                if (Mathf.Max(velocityDegrees, degggrees) - Mathf.Min(velocityDegrees, degggrees) >= 180.0f * Mathf.Deg2Rad)
+                //currentX = currentVector.x;
+                //currentY = currentVector.y;
+                if ((Mathf.Max(velocityDegrees, degggrees) - Mathf.Min(velocityDegrees, degggrees))*57.324840f >= 180.0f)
                 {
                     rotationDirection = 1;
                 }
@@ -52,12 +58,16 @@ public class ShipMovement1 : MonoBehaviour {
                 {
                     rotationDirection = -1;
                 }
-                degggrees = ((Mathf.Asin(currentX)) + (0.0005f * rotationDirection));
+                
                 
             }
-            currentVector = new Vector2(Mathf.Cos(degggrees), Mathf.Sin(degggrees));
+            degggrees = (degggrees + (0.5f * rotationDirection));
+
+            currentVector = new Vector2(Mathf.Sin(degggrees), Mathf.Cos(degggrees));
 
             GetComponent<Rigidbody2D>().velocity = (currentVector * (((movementSpeed * Input.GetAxis("LeftTriggerController" + ((shipNumber * 2) - 2 + playerControlled))) + 0.001f)));
+
+            
 
 
 

@@ -1287,13 +1287,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1756154871}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b03be04ac12bc8d4884ae4e1fc99fcc3, type: 3}
+  m_Script: {fileID: 11500000, guid: b0373310c3046084a89ed8af6497fec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  navRoom: {fileID: 1609136254}
   movementSpeed: 30
   rotationSpeed: 10
+  playerInput: 0
   shipRoot: {fileID: 995376608}
+  navRoom: {fileID: 1609136254}
+  degrees: 0
+  switchDirection: 1
+  inputDegree: 0
 --- !u!1001 &1849407838
 Prefab:
   m_ObjectHideFlags: 0
@@ -1352,6 +1356,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4304866310624488, guid: 945af5153456303478bce4d0030d0f21, type: 2}
       propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212654639469212478, guid: 945af5153456303478bce4d0030d0f21,
+        type: 2}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212654639469212478, guid: 945af5153456303478bce4d0030d0f21,
+        type: 2}
+      propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
