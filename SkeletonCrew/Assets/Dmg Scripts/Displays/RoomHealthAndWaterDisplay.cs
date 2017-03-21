@@ -19,6 +19,6 @@ public class RoomHealthAndWaterDisplay : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        textie.text = "Health: " + roomie.health + " WaterLevel: " + roomie.waterLevel;
+        textie.text = "Health: " + roomie.health + "\n WaterLevel: " + roomie.waterLevel;
     }
 }
