@@ -63,7 +63,7 @@ public class rightBullet : MonoBehaviour {
     void detonate()
     {
         Vector2 currentLocation = transform.position;
-        GetComponent<AOEProjDmg>().AoeApplyDamage(currentLocation, 0.6f, 25);
+        //GetComponent<AOEProjDmg>().AoeApplyDamage(currentLocation, 0.6f, 25);
         
     }
 }

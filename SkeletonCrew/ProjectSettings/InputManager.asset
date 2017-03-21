@@ -22,6 +22,38 @@ InputManager:
     axis: 0
     joyNum: 11
   - serializedVersion: 3
+    m_Name: LeftHorizontalController1
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 3
+    dead: 0.5
+    sensitivity: 3
+    snap: 1
+    invert: 0
+    type: 2
+    axis: 0
+    joyNum: 11
+  - serializedVersion: 3
+    m_Name: LeftHorizontalController4
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 3
+    dead: 0.5
+    sensitivity: 3
+    snap: 1
+    invert: 0
+    type: 2
+    axis: 0
+    joyNum: 11
+  - serializedVersion: 3
     m_Name: LeftHorizontalController2
     descriptiveName: 
     descriptiveNegativeName: 
@@ -99,6 +131,38 @@ InputManager:
     snap: 1
     invert: 1
     type: 0
+    axis: 1
+    joyNum: 11
+  - serializedVersion: 3
+    m_Name: LeftVerticalController1
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 3
+    dead: 0.5
+    sensitivity: 3
+    snap: 1
+    invert: 1
+    type: 2
+    axis: 1
+    joyNum: 11
+  - serializedVersion: 3
+    m_Name: LeftVerticalController4
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 3
+    dead: 0.5
+    sensitivity: 3
+    snap: 1
+    invert: 1
+    type: 2
     axis: 1
     joyNum: 11
   - serializedVersion: 3
@@ -182,6 +246,38 @@ InputManager:
     axis: 8
     joyNum: 11
   - serializedVersion: 3
+    m_Name: LeftTriggerController1
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 1000
+    dead: 0.5
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 2
+    axis: 8
+    joyNum: 11
+  - serializedVersion: 3
+    m_Name: LeftTriggerController4
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 1000
+    dead: 0.5
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 2
+    axis: 8
+    joyNum: 11
+  - serializedVersion: 3
     m_Name: LeftTriggerController2
     descriptiveName: 
     descriptiveNegativeName: 
@@ -247,6 +343,38 @@ InputManager:
     joyNum: 4
   - serializedVersion: 3
     m_Name: LeftBumperController-1
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 1000
+    dead: 0.001
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 0
+    joyNum: 11
+  - serializedVersion: 3
+    m_Name: LeftBumperController1
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 1000
+    dead: 0.001
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 0
+    joyNum: 11
+  - serializedVersion: 3
+    m_Name: LeftBumperController4
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
