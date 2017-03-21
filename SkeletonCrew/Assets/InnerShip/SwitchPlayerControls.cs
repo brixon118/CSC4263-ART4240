@@ -24,7 +24,7 @@ public class SwitchPlayerControls : MonoBehaviour {
         //Switching player control
         if (other.CompareTag("PlayerCharacter"))
         {
-            if (Input.GetButtonUp("LeftBumperController" + ((shipNumber * 2) - 2 + other.GetComponent<PlayersController>().playerNumber)))
+            if (Input.GetButtonUp("LeftBumperController" + ((shipNumber * 3) - 2 + other.GetComponent<PlayersController>().playerNumber)))
             {
                 playerController = other.gameObject.GetComponent<PlayersController>();
                 if (playerControlled == 0)

@@ -28,7 +28,7 @@ public class rightBullet : MonoBehaviour {
         playerControlled = navRoom.GetComponent<SwitchPlayerControls>().playerControlled;
         if (playerControlled != 0)
         {
-            triggerDown = Input.GetAxisRaw("LeftTriggerController" + ((shipNumber * 2) - 2 + playerControlled));
+            triggerDown = Input.GetAxisRaw("LeftTriggerController" + ((shipNumber * 3) - 2 + playerControlled));
             if (triggerDown == 1)
             {
                  rFire();

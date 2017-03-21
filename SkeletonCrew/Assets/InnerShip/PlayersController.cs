@@ -24,7 +24,7 @@ public class PlayersController : MonoBehaviour {
     {
         if (controlled)
         {
-            velocity = new Vector2(Input.GetAxis("LeftHorizontalController" + ((shipNumber*2) - 2 + playerNumber)), Input.GetAxis("LeftVerticalController" + ((shipNumber * 2) - 2 + playerNumber)));
+            velocity = new Vector2(Input.GetAxis("LeftHorizontalController" + ((shipNumber*3) - 2 + playerNumber)), Input.GetAxis("LeftVerticalController" + ((shipNumber * 3) - 2 + playerNumber)));
             GetComponent<Rigidbody2D>().velocity = (velocity * speed);
             if (!velocity.Equals(Vector2.zero))
             {

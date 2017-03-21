@@ -36,7 +36,15 @@ public class TagDamage : MonoBehaviour
     public void ApplyDamage(float dmg)
     {
         Phealth = LinkDamage.GetComponent<RoomsBehavior>();
-        Phealth.health -= dmg;
+        if(Phealth.health <= dmg)
+        {
+            Phealth.health = 0;
+        }
+        else
+        {
+            Phealth.health -= dmg;
+        }
+
         //water = true;
     }
 

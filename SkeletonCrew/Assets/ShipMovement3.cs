@@ -35,13 +35,13 @@ public class ShipMovement3 : MonoBehaviour {
 
         if (playerControlled != 0)
         {
-            velocityGoal = new Vector2(Input.GetAxis("LeftHorizontalController" + ((shipNumber * 2) - 2 + playerControlled)), Input.GetAxis("LeftVerticalController" + ((shipNumber * 2) - 2 + playerControlled)));
+            velocityGoal = new Vector2(Input.GetAxis("LeftHorizontalController" + ((shipNumber * 3) - 2 + playerControlled)), Input.GetAxis("LeftVerticalController" + ((shipNumber * 3) - 2 + playerControlled)));
             currentVector = GetComponent<Rigidbody2D>().velocity;
             degggrees = Mathf.Atan2(currentVector.x, currentVector.y);
             degggrees += 0.01f;
             //currentVector = new Vector2(Mathf.Sin(degggrees), Mathf.Cos(degggrees));
             currentVector = Quaternion.AngleAxis(30.0f, Vector3.forward) * currentVector;
-            GetComponent<Rigidbody2D>().velocity = (currentVector * ((movementSpeed * Input.GetAxis("LeftTriggerController" + ((shipNumber * 2) - 2 + playerControlled))) + 0.0001f));
+            GetComponent<Rigidbody2D>().velocity = (currentVector * ((movementSpeed * Input.GetAxis("LeftTriggerController" + ((shipNumber * 3) - 2 + playerControlled))) + 0.0001f));
             if (!velocityGoal.Equals(Vector2.zero))
             {
                 prevVector = GetComponent<Rigidbody2D>().velocity.normalized;

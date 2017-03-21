@@ -20,7 +20,7 @@ public class Rottationtatetttsee : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         playerControlled = navRoom.GetComponent<SwitchPlayerControls>().playerControlled;
-        velocity = new Vector2(Input.GetAxis("LeftHorizontalController" + ((shipNumber * 2) - 2 + playerControlled)), Input.GetAxis("LeftVerticalController" + ((shipNumber * 2) - 2 + playerControlled)));
+        velocity = new Vector2(Input.GetAxis("LeftHorizontalController" + ((shipNumber * 3) - 2 + playerControlled)), Input.GetAxis("LeftVerticalController" + ((shipNumber * 3) - 2 + playerControlled)));
         velocityDegrees = -Mathf.Atan2(-velocity.normalized.x, velocity.normalized.y) *Mathf.Rad2Deg;
         currentZ = (transform.rotation.z) * 180;
         if (!velocity.Equals(Vector2.zero))
@@ -34,6 +34,6 @@ public class Rottationtatetttsee : MonoBehaviour {
                 transform.Rotate(Vector3.forward * rotationRate * Time.deltaTime);
             }
         }
-        GetComponent<Rigidbody2D>().velocity = (transform.up * ((30 * Input.GetAxis("LeftTriggerController" + ((shipNumber * 2) - 2 + playerControlled)) + 0.0001f)));
+        GetComponent<Rigidbody2D>().velocity = (transform.up * ((30 * Input.GetAxis("LeftTriggerController" + ((shipNumber * 3) - 2 + playerControlled)) + 0.0001f)));
     }
 }

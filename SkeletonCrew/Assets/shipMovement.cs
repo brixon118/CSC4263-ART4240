@@ -34,12 +34,12 @@ public class ShipMovement : MonoBehaviour {
             //GetComponent<Transform>().rotation.z 
 
 
-            velocity = new Vector2(Input.GetAxis("LeftHorizontalController" + ((shipNumber * 2) - 1)), Input.GetAxis("LeftVerticalController" + ((shipNumber * 2) - 1)));
+            velocity = new Vector2(Input.GetAxis("LeftHorizontalController" + ((shipNumber * 3) - 1)), Input.GetAxis("LeftVerticalController" + ((shipNumber * 3) - 1)));
         }
 
         else if (playerControlled == 2)
         {
-            velocity = new Vector2(Input.GetAxis("LeftHorizontalController" + ((shipNumber * 2))), Input.GetAxis("LeftVerticalController" + ((shipNumber * 2))));
+            velocity = new Vector2(Input.GetAxis("LeftHorizontalController" + ((shipNumber * 3))), Input.GetAxis("LeftVerticalController" + ((shipNumber * 3))));
         }
 
         playerInput = playerControlled;
