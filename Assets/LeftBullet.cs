@@ -4,26 +4,39 @@ using UnityEngine;
 
 public class LeftBullet : MonoBehaviour {
 
-    public GameObject leftBulletPrefab;
+    private int playerControlled;
+    private int shipNumber;
+    public GameObject shipRoot;
+    public GameObject navRoom;
+    public float triggerDown;
+
+    public float speed;
+    public GameObject leftGunBullet;
     public Transform lBulletSpawn;
+    public GameObject LeftGun;
 
 	// Use this for initialization
-	void Start () {
-		
-	}
+	void Start ()
+    {
+        shipNumber = shipRoot.GetComponent<ShipNumber>().shipNumber;
+    }
 	
 	// Update is called once per frame
 	void Update () {
 
-        transform.Rotate(0,Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f,0);
-        transform.Translate(0,0,Input.GetAxis("Vertical") * Time.deltaTime * 3.0f);
+        transform.rotation = LeftGun.transform.rotation;
+        //transform.Translate(0,0,Input.GetAxis("Vertical") * Time.deltaTime * 3.0f);
 
-		if (Input.GetKeyDown(KeyCode.S))
+        playerControlled = navRoom.GetComponent<SwitchPlayerControls>().playerControlled;
+        if (playerControlled != 0)
         {
-            lFire();
-            
-        }   
-	}
+            triggerDown = Input.GetAxisRaw("LeftTriggerController" + ((shipNumber * 2) - 2 + playerControlled));
+            if (triggerDown == 1)
+            {
+                lFire();
+            }
+        }
+    }
     void OnCollisionEnter(Collision otherObj)
     {
         if (otherObj.gameObject.tag == "flakBullet")
@@ -35,8 +48,20 @@ public class LeftBullet : MonoBehaviour {
     void lFire()
     {
         //create the bullet from the bullet prefab
-        var lBullet = (GameObject)Instantiate(leftBulletPrefab, lBulletSpawn.position,lBulletSpawn.rotation);
-        lBullet.GetComponent<Rigidbody>().velocity = lBullet.transform.forward * 6;
+        var lBullet = (GameObject)Instantiate(leftGunBullet, lBulletSpawn.position,transform.rotation);
+ 
+
+        lBullet.GetComponent<Rigidbody2D>().velocity = lBulletSpawn.up * speed;
+        //new Vector2((empty.x - lbulletspan.x), (empty.y - lbulletspawn.y));
+        Vector2 currentLocation = transform.position;
+        Invoke("detonate", 1.5f);
+        Destroy(lBullet, 1.5f);
     }
 
+    void detonate()
+    {
+        Vector2 currentLocation = transform.position;
+        GetComponent<AOEProjDmg>().AoeApplyDamage(currentLocation, 0.6f, 25);
+
+    }
 }

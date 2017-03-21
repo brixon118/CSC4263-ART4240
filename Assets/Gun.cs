@@ -7,28 +7,38 @@ public class Gun : MonoBehaviour {
     HingeJoint2D[] hingeJoint = new HingeJoint2D[0];
     JointMotor2D jointMotor;
 
+    private int playerControlled;
+    private int shipNumber;
+    public GameObject shipRoot;
+    public GameObject navRoom;
+    public float horizontalControl;
+
 	// Use this for initialization
 	void Start () {
         hingeJoint = gameObject.GetComponents<HingeJoint2D>();
         jointMotor = hingeJoint[0].motor;
+        shipNumber = shipRoot.GetComponent<ShipNumber>().shipNumber;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
-        if (Input.GetKey(KeyCode.J))
+        playerControlled = navRoom.GetComponent<SwitchPlayerControls>().playerControlled;
+        if (playerControlled != 0)
         {
-            jointMotor.motorSpeed = -35;
+            horizontalControl = Input.GetAxisRaw("LeftHorizontalController" + ((shipNumber * 2) - 2 + playerControlled));
+            if (horizontalControl == -1)
+            {
+                jointMotor.motorSpeed = -35;
+            }
+            else if (horizontalControl == 1)
+            {
+                jointMotor.motorSpeed = 35;
+            }
+            else
+            {
+                jointMotor.motorSpeed = 0;
+            }
+            hingeJoint[0].motor = jointMotor;
         }
-        else if (Input.GetKey(KeyCode.L))
-        {
-            jointMotor.motorSpeed = 35;
-        }
-        else
-        {
-            jointMotor.motorSpeed = 0;
-        }
-        hingeJoint[0].motor = jointMotor;
-
     }
 }
