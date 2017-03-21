@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class AOEProjDmg : MonoBehaviour
 {
-    Vector3 BallisticProjectilePosition;
+    public Vector3 BallisticProjectilePosition;
     public float AOERadius = 0.6f;
-    Transform trans;
+    public Transform trans;
     public float dmg = 25;
 
     // Use this for initialization
@@ -21,12 +21,12 @@ public class AOEProjDmg : MonoBehaviour
         if(trans.position.z <= 0)
         {
             //Vector2 currentPosition = trans.position;
-            AoeApplyDamage(trans.position, AOERadius, dmg);
+            //AoeApplyDamage(trans.position, AOERadius, dmg);
         }
         
     }
 
-    void AoeApplyDamage(Vector2 loc, float radius, float dmg)
+    public void AoeApplyDamage(Vector2 loc, float radius, float dmg)
     {
         Collider2D[] objectsInRange = Physics2D.OverlapCircleAll(loc, radius);
         foreach (Collider2D col in objectsInRange)
