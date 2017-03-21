@@ -45,7 +45,7 @@ public class ShipMovement4 : MonoBehaviour {
 
             currentVector = new Vector2(Mathf.Sin(degrees), Mathf.Cos(degrees));
             Vector2 testest = Quaternion.AngleAxis(1.0f, Vector3.forward) * GetComponent<Rigidbody2D>().velocity;
-            Vector2 dir = (Vector2)(Quaternion.Euler(0, 0, inputDegrees) * Vector2.right);
+            Vector2 dir = Quaternion.AngleAxis(30.0f, Vector3.forward) * Vector2.up;
             GetComponent<Rigidbody2D>().velocity = (dir * ((movementSpeed * Input.GetAxis("LeftTriggerController" + ((shipNumber * 2) - 2 + playerControlled))) + 0.01f));
             //if (!currentVector.Equals(Vector2.zero))
             //{

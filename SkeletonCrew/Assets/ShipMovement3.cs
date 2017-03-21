@@ -39,8 +39,8 @@ public class ShipMovement3 : MonoBehaviour {
             currentVector = GetComponent<Rigidbody2D>().velocity;
             degggrees = Mathf.Atan2(currentVector.x, currentVector.y);
             degggrees += 0.01f;
-            currentVector = new Vector2(Mathf.Cos(degggrees), Mathf.Sin(degggrees));
-
+            //currentVector = new Vector2(Mathf.Sin(degggrees), Mathf.Cos(degggrees));
+            currentVector = Quaternion.AngleAxis(30.0f, Vector3.forward) * currentVector;
             GetComponent<Rigidbody2D>().velocity = (currentVector * ((movementSpeed * Input.GetAxis("LeftTriggerController" + ((shipNumber * 2) - 2 + playerControlled))) + 0.0001f));
             if (!velocityGoal.Equals(Vector2.zero))
             {
