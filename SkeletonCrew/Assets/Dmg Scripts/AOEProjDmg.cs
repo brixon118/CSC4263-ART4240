@@ -4,25 +4,17 @@ using UnityEngine;
 
 public class AOEProjDmg : MonoBehaviour
 {
-    public Vector3 BallisticProjectilePosition;
-    public float AOERadius = 0.6f;
-    public Transform trans;
-    public float dmg = 25;
+    
 
     // Use this for initialization
     void Start()
     {
-        trans = GetComponent<Transform>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(trans.position.z <= 0)
-        {
-            //Vector2 currentPosition = trans.position;
-            //AoeApplyDamage(trans.position, AOERadius, dmg);
-        }
         
     }
 

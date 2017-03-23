@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class LeftGun : MonoBehaviour
 {
-
     HingeJoint2D[] lhingeJoint = new HingeJoint2D[0];
     JointMotor2D ljointMotor;
 
@@ -15,16 +14,14 @@ public class LeftGun : MonoBehaviour
     public float horizontalControl;
 
     // Use this for initialization
-    void Start()
-    {
+    void Start() {
         lhingeJoint = gameObject.GetComponents<HingeJoint2D>();
         ljointMotor = lhingeJoint[0].motor;
         shipNumber = shipRoot.GetComponent<ShipNumber>().shipNumber;
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         playerControlled = navRoom.GetComponent<SwitchPlayerControls>().playerControlled;
         if (playerControlled != 0)
         {

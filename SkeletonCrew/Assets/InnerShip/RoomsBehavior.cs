@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RoomsBehavior : MonoBehaviour {
-    public float maxHealth = 100;
-    public float health = 100;
+    public float maxHealth = 255;
+    public float health = 255;
     public float maxWaterLevel = 100;
     public float waterLevel = 0;
 
@@ -15,7 +15,7 @@ public class RoomsBehavior : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        GetComponent<SpriteRenderer>().color = new Color(1.0f, health/100, health/100, 1f);
     }
 
     // Updates every second

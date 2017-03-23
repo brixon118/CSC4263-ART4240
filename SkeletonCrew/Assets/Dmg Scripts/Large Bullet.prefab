@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50242397720517936}
   - component: {fileID: 58077858053052066}
   - component: {fileID: 114444812781214676}
+  - component: {fileID: 114706739031078550}
   m_Layer: 0
   m_Name: Large Bullet
   m_TagString: Untagged
@@ -38,7 +39,7 @@ Transform:
   m_GameObject: {fileID: 1362126813036316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.14, y: -3.97, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -88,10 +89,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef4b6805bb7b1b046984fee5cd21d184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BallisticProjectilePosition: {x: 0, y: 0, z: 0}
-  AOERadius: 0.6
-  trans: {fileID: 0}
+--- !u!114 &114706739031078550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1362126813036316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 179baad13f44688439ac026a0f8a6a33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 40
   dmg: 25
+  explosion: {fileID: 21300000, guid: bc4d5e8742759504ca3743b2330430fd, type: 3}
+  bulletLife: 3
 --- !u!212 &212652778727958522
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -124,6 +136,6 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f3464e981cfbfb141adfb217397f52fe, type: 3}
-  m_Color: {r: 0.57254905, g: 0.56078434, b: 0.56078434, a: 1}
+  m_Color: {r: 0.4852941, g: 0.4852941, b: 0.4852941, a: 1}
   m_FlipX: 0
   m_FlipY: 0

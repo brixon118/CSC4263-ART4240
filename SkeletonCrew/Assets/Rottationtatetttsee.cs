@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rottationtatetttsee : MonoBehaviour {
+public class Rottationtatetttsee : MonoBehaviour
+{
     private Vector2 velocity;
     private int playerControlled;
     private int shipNumber;
@@ -12,16 +13,18 @@ public class Rottationtatetttsee : MonoBehaviour {
     public float currentZ;
     public float rotationRate = 50;
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         currentZ = (transform.rotation.z) * 180;
         shipNumber = shipRoot.GetComponent<ShipNumber>().shipNumber;
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         playerControlled = navRoom.GetComponent<SwitchPlayerControls>().playerControlled;
         velocity = new Vector2(Input.GetAxis("LeftHorizontalController" + ((shipNumber * 3) - 2 + playerControlled)), Input.GetAxis("LeftVerticalController" + ((shipNumber * 3) - 2 + playerControlled)));
-        velocityDegrees = -Mathf.Atan2(-velocity.normalized.x, velocity.normalized.y) *Mathf.Rad2Deg;
+        velocityDegrees = -Mathf.Atan2(-velocity.normalized.x, velocity.normalized.y) * Mathf.Rad2Deg;
         currentZ = (transform.rotation.z) * 180;
         if (!velocity.Equals(Vector2.zero))
         {

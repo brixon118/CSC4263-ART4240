@@ -4,41 +4,94 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour {
 
-    HingeJoint2D[] hingeJoint = new HingeJoint2D[0];
-    JointMotor2D jointMotor;
 
+
+
+
+    private Vector2 velocity;
     private int playerControlled;
     private int shipNumber;
+    public GameObject gunBullet;
     public GameObject shipRoot;
     public GameObject navRoom;
-    public float horizontalControl;
+    public float velocityDegrees;
+    public float currentZ;
+    public float rotationRate = 50;
+    public float upperLimit = 50;
+    public float lowerLimit = -50;
+    public float fireRate = 0.5f;
+    private bool canFire = true;
+    public bool toggleRotation = true;
 
-	// Use this for initialization
-	void Start () {
-        hingeJoint = gameObject.GetComponents<HingeJoint2D>();
-        jointMotor = hingeJoint[0].motor;
+    // Use this for initialization
+    void Start () {
         shipNumber = shipRoot.GetComponent<ShipNumber>().shipNumber;
-	}
+        currentZ = (transform.rotation.z) * 180;
+        upperLimit += currentZ;
+        lowerLimit += currentZ;
+    }
 	
 	// Update is called once per frame
 	void Update () {
+
         playerControlled = navRoom.GetComponent<SwitchPlayerControls>().playerControlled;
+
         if (playerControlled != 0)
         {
-            horizontalControl = Input.GetAxisRaw("LeftHorizontalController" + ((shipNumber * 2) - 2 + playerControlled));
-            if (horizontalControl == -1)
+            if (canFire && Input.GetAxisRaw("LeftTriggerController" + ((shipNumber * 3) - 2 + playerControlled)) == 1)
             {
-                jointMotor.motorSpeed = -35;
+                rFire();
+                canFire = false;
+                Invoke("setCanFire", fireRate);
             }
-            else if (horizontalControl == 1)
+            
+
+
+/*
+            if (Input.GetAxisRaw("LeftTriggerController" + ((shipNumber * 3) - 2 + playerControlled)) == 1)
             {
-                jointMotor.motorSpeed = 35;
+                if (triggerUp)
+                {
+                    rBullet.GetComponent<rightBullet>().detonate();
+                    triggerUp = false;
+                }
             }
             else
             {
-                jointMotor.motorSpeed = 0;
+                triggerUp = true;
             }
-            hingeJoint[0].motor = jointMotor;
+*/
+
+
+            velocity = new Vector2(Input.GetAxis("LeftHorizontalController" + ((shipNumber * 3) - 2 + playerControlled)), Input.GetAxis("LeftVerticalController" + ((shipNumber * 3) - 2 + playerControlled)));
+            velocityDegrees = -Mathf.Atan2(-velocity.normalized.x, velocity.normalized.y) * Mathf.Rad2Deg;
+            
+
+            if (!velocity.Equals(Vector2.zero) && toggleRotation)
+            {
+                if (velocityDegrees < 0 && currentZ < upperLimit)
+                {
+                    transform.Rotate(Vector3.forward * rotationRate * Time.deltaTime);
+                    currentZ += rotationRate * Time.deltaTime;
+                }
+                else if(currentZ > lowerLimit)
+                {
+                    transform.Rotate(Vector3.forward * -rotationRate * Time.deltaTime);
+                    currentZ += -rotationRate * Time.deltaTime;
+                }
+            }
+
         }
     }
+
+    void setCanFire()
+    {
+        canFire = true;
+    }
+    void rFire()
+    {
+        //create the bullet from the bullet prefab
+        Instantiate(gunBullet, transform.position + transform.right - Vector3.forward, transform.rotation);
+    }
+
 }

@@ -11,6 +11,7 @@ public class PlayersController : MonoBehaviour {
     private Vector2 velocity;
     public GameObject shipRoot;
     private int shipNumber;
+
     //public GameObject parentObject;
     // Use this for initialization
     void Start()
