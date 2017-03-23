@@ -47,7 +47,7 @@ public class largeBullet : MonoBehaviour {
         else
         {
             Vector2 currentLocation = transform.position;
-            GetComponent<AOEProjDmg>().AoeApplyDamage(currentLocation, 0.8f, 50);
+            //GetComponent<AOEProjDmg>().AoeApplyDamage(currentLocation, 0.8f, 50);
             Destroy(gameObject, 0f);
         }
     }
