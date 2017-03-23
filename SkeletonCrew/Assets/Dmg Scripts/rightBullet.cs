@@ -49,25 +49,4 @@ public class rightBullet : MonoBehaviour {
 */
     }
 
-<<<<<<< HEAD
-=======
-    void rFire()
-    {
-        //create the bullet from the bullet prefab
-        var rBullet = (GameObject)Instantiate(rightGunBullet, rBulletSpawn.position, transform.rotation);
-
-
-        rBullet.GetComponent<Rigidbody2D>().velocity = rBulletSpawn.right * speed;
-        //new Vector2((empty.x - lbulletspan.x), (empty.y - lbulletspawn.y));
-        Invoke("detonate", 1.5f);
-        Destroy(rBullet, 1.5f);
-    }
-
-    void detonate()
-    {
-        Vector2 currentLocation = transform.position;
-        //GetComponent<AOEProjDmg>().AoeApplyDamage(currentLocation, 0.6f, 25);
-        
-    }
->>>>>>> origin/robinMVP2
 }
