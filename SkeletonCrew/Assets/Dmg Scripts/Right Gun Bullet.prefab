@@ -246,7 +246,7 @@ MonoBehaviour:
   speed: 15
   dmg: 10
   explosion: {fileID: 21300000, guid: bc4d5e8742759504ca3743b2330430fd, type: 3}
-  bulletLife: 5
+  bulletLife: 2
 --- !u!212 &212354539319555108
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -279,6 +279,6 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4e7784f1451f9cb4a93c51a053811a74, type: 3}
-  m_Color: {r: 0.5735294, g: 0.56087804, b: 0.56087804, a: 1}
+  m_Color: {r: 1, g: 0.9724139, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
