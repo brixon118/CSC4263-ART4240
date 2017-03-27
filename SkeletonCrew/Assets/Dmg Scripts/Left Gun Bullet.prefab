@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212199530997592386}
   - component: {fileID: 50468435179024532}
   - component: {fileID: 58723071508732350}
-  - component: {fileID: 114449094740754228}
+  - component: {fileID: 114526209150117692}
   m_Layer: 0
   m_Name: Left Gun Bullet
   m_TagString: Untagged
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1010005483145740}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.09, y: -2.29, z: 0}
+  m_LocalPosition: {x: 3.0668416, y: -2.853683, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -69,7 +69,7 @@ CircleCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1010005483145740}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -77,7 +77,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &114449094740754228
+--- !u!114 &114526209150117692
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -85,13 +85,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1010005483145740}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef4b6805bb7b1b046984fee5cd21d184, type: 3}
+  m_Script: {fileID: 11500000, guid: 18a269ba5cc400e4f86cd937c8544470, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BallisticProjectilePosition: {x: 0, y: 0, z: 0}
-  AOERadius: 0.6
-  trans: {fileID: 0}
-  dmg: 25
+  speed: 10
+  dmg: 10
+  gunBullet: {fileID: 1568919812830020, guid: c9cc1b724fdb9554aac3837c1a1e2265, type: 2}
+  bulletLife: 1
 --- !u!212 &212199530997592386
 SpriteRenderer:
   m_ObjectHideFlags: 1
