@@ -37,16 +37,6 @@ public class rightBullet : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D otherObj)
     {
         detonate();
-/*
-        if (otherObj.gameObject.tag == "flakBullet")
-        {
-            Destroy(gameObject);
-        }
-        else 
-        {
-            
-        }
-*/
     }
 
 }
