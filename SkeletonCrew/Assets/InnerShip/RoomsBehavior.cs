@@ -15,7 +15,7 @@ public class RoomsBehavior : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        GetComponent<SpriteRenderer>().color = new Color(1.0f, health/100, health/100, 1f);
     }
 
     // Updates every second
