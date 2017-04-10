@@ -92,6 +92,9 @@ public class Gun : MonoBehaviour {
     {
         //create the bullet from the bullet prefab
         Instantiate(gunBullet, transform.position + transform.right - Vector3.forward, transform.rotation);
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.Play();
+        audio.Play(44100);
     }
 
 }
