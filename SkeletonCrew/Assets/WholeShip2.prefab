@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114245475070535912}
   m_Layer: 0
   m_Name: FlakRoom (1)
-  m_TagString: Room
+  m_TagString: RoomCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 114142574022651242}
   m_Layer: 0
   m_Name: FrontRoom (1)
-  m_TagString: Room
+  m_TagString: RoomCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 114442765215832040}
   m_Layer: 0
   m_Name: HallwayToRightGun (1)
-  m_TagString: Hallway-LeftToBack
+  m_TagString: RoomCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 114508872078238040}
   m_Layer: 0
   m_Name: NavRoom (1)
-  m_TagString: Untagged
+  m_TagString: RoomCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -230,6 +230,7 @@ GameObject:
   - component: {fileID: 4471708282079914}
   - component: {fileID: 212957488901984244}
   - component: {fileID: 114966393378117602}
+  - component: {fileID: 61204778377322824}
   m_Layer: 0
   m_Name: HallwayBetweenSideGuns
   m_TagString: Hallway-LeftToBack
@@ -269,7 +270,7 @@ GameObject:
   - component: {fileID: 114152855207283742}
   m_Layer: 0
   m_Name: HallwayBetweenSideGuns (1)
-  m_TagString: Hallway-LeftToBack
+  m_TagString: RoomCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -303,7 +304,7 @@ GameObject:
   - component: {fileID: 114429217374764162}
   m_Layer: 0
   m_Name: HallwayToNav (1)
-  m_TagString: Untagged
+  m_TagString: RoomCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -356,7 +357,7 @@ GameObject:
   - component: {fileID: 114746431195126320}
   m_Layer: 0
   m_Name: LeftGunRoom (1)
-  m_TagString: Room
+  m_TagString: RoomCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -426,7 +427,7 @@ GameObject:
   - component: {fileID: 114060550087089386}
   m_Layer: 0
   m_Name: RightGunRoom (1)
-  m_TagString: Room
+  m_TagString: RoomCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -463,7 +464,7 @@ GameObject:
   - component: {fileID: 114185990008689732}
   m_Layer: 0
   m_Name: RightToBackHallway (1)
-  m_TagString: Hallway-LeftToBack
+  m_TagString: RoomCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -478,6 +479,7 @@ GameObject:
   - component: {fileID: 4979715569480334}
   - component: {fileID: 212126390474695540}
   - component: {fileID: 114825224723523454}
+  - component: {fileID: 61734654243422520}
   m_Layer: 0
   m_Name: HallwayToRightGun
   m_TagString: Hallway-LeftToBack
@@ -514,6 +516,7 @@ GameObject:
   - component: {fileID: 4250678824237250}
   - component: {fileID: 212417147746370698}
   - component: {fileID: 114653620506190396}
+  - component: {fileID: 61320365884723842}
   m_Layer: 0
   m_Name: HallwayToNav
   m_TagString: Untagged
@@ -586,6 +589,7 @@ GameObject:
   - component: {fileID: 4944745580642870}
   - component: {fileID: 212048072453566684}
   - component: {fileID: 114870951950962130}
+  - component: {fileID: 61595262923040026}
   m_Layer: 0
   m_Name: RightToBackHallway
   m_TagString: Hallway-LeftToBack
@@ -604,9 +608,10 @@ GameObject:
   - component: {fileID: 212226431514943464}
   - component: {fileID: 50998318237697252}
   - component: {fileID: 114028107216504432}
+  - component: {fileID: 114373702187401584}
   m_Layer: 0
   m_Name: ShipOutside
-  m_TagString: Untagged
+  m_TagString: ShipOutside
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1512,6 +1517,20 @@ BoxCollider2D:
   m_Offset: {x: 0.00000062584877, y: -0.0000038146973}
   serializedVersion: 2
   m_Size: {x: 1.0000002, y: 1.0000001}
+--- !u!61 &61204778377322824
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1300055941148266}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.00000023841858, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 1.0000002}
 --- !u!61 &61209359819869168
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -1554,6 +1573,20 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!61 &61320365884723842
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1758063532698376}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -0.00000017881393}
+  serializedVersion: 2
+  m_Size: {x: 1.0000005, y: 1.0000005}
 --- !u!61 &61330124680289522
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -1610,6 +1643,20 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!61 &61595262923040026
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839765281737786}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.00000023841858, y: 0.00024414062}
+  serializedVersion: 2
+  m_Size: {x: 1.0000004, y: 1.0000002}
 --- !u!61 &61615880329790416
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -1652,6 +1699,20 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!61 &61734654243422520
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1702636016190952}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.00000008940697, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1.0000004, y: 1.0000002}
 --- !u!61 &61875588553640230
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -1723,6 +1784,8 @@ MonoBehaviour:
   health: 100
   maxWaterLevel: 100
   waterLevel: 0
+  shipNumber: 2
+  shipOutside: {fileID: 0}
 --- !u!114 &114028107216504432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1779,6 +1842,8 @@ MonoBehaviour:
   health: 100
   maxWaterLevel: 100
   waterLevel: 0
+  shipNumber: 2
+  shipOutside: {fileID: 0}
 --- !u!114 &114131521578248948
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1794,6 +1859,8 @@ MonoBehaviour:
   health: 100
   maxWaterLevel: 100
   waterLevel: 0
+  shipNumber: 2
+  shipOutside: {fileID: 0}
 --- !u!114 &114142574022651242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1845,6 +1912,8 @@ MonoBehaviour:
   health: 100
   maxWaterLevel: 100
   waterLevel: 0
+  shipNumber: 2
+  shipOutside: {fileID: 0}
 --- !u!114 &114204016959233612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1900,6 +1969,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac30c4fb68e9b7f42b60417b2eeca8c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114373702187401584
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1846343083171526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d84a96206b6d09459eaf9b1364be77c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScrap: 0
+  player1: 0
 --- !u!114 &114384353520044918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1915,6 +1997,8 @@ MonoBehaviour:
   health: 100
   maxWaterLevel: 100
   waterLevel: 0
+  shipNumber: 2
+  shipOutside: {fileID: 0}
 --- !u!114 &114429217374764162
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2023,6 +2107,8 @@ MonoBehaviour:
   health: 100
   maxWaterLevel: 100
   waterLevel: 0
+  shipNumber: 2
+  shipOutside: {fileID: 0}
 --- !u!114 &114722320905514406
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2109,6 +2195,8 @@ MonoBehaviour:
   health: 100
   maxWaterLevel: 100
   waterLevel: 0
+  shipNumber: 2
+  shipOutside: {fileID: 0}
 --- !u!114 &114857712250039072
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2137,6 +2225,8 @@ MonoBehaviour:
   health: 100
   maxWaterLevel: 100
   waterLevel: 0
+  shipNumber: 2
+  shipOutside: {fileID: 0}
 --- !u!114 &114883978573013270
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2167,6 +2257,8 @@ MonoBehaviour:
   health: 100
   maxWaterLevel: 100
   waterLevel: 0
+  shipNumber: 2
+  shipOutside: {fileID: 0}
 --- !u!124 &124291313378576298
 Behaviour:
   m_ObjectHideFlags: 1
