@@ -15,6 +15,7 @@ TagManager:
   - Room
   - RoomCollider
   - FlakableBullet
+  - WholeShip1
   layers:
   - Default
   - TransparentFX

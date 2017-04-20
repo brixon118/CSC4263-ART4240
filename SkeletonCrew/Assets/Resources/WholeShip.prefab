@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114501397003206110}
   m_Layer: 0
   m_Name: HallwayToRightGun (1)
-  m_TagString: Hallway-LeftToBack
+  m_TagString: RoomCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 114362435822339984}
   m_Layer: 0
   m_Name: HallwayBetweenSideGuns (1)
-  m_TagString: Hallway-LeftToBack
+  m_TagString: RoomCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 114269307212803834}
   m_Layer: 0
   m_Name: RightToBackHallway (1)
-  m_TagString: Hallway-LeftToBack
+  m_TagString: RoomCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 114987696981584424}
   m_Layer: 0
   m_Name: FrontRoom (1)
-  m_TagString: Room
+  m_TagString: RoomCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 114693886702757894}
   m_Layer: 0
   m_Name: FlakRoom (1)
-  m_TagString: Room
+  m_TagString: RoomCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 114157865869447982}
   m_Layer: 0
   m_Name: NavRoom (1)
-  m_TagString: Untagged
+  m_TagString: RoomCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -463,7 +463,7 @@ GameObject:
   - component: {fileID: 114979901674876400}
   m_Layer: 0
   m_Name: HallwayToNav (1)
-  m_TagString: Untagged
+  m_TagString: RoomCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -500,7 +500,7 @@ GameObject:
   - component: {fileID: 114155151451468870}
   m_Layer: 0
   m_Name: RightGunRoom (1)
-  m_TagString: Room
+  m_TagString: RoomCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -573,7 +573,7 @@ GameObject:
   - component: {fileID: 114121622808353706}
   m_Layer: 0
   m_Name: LeftGunRoom (1)
-  m_TagString: Room
+  m_TagString: RoomCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1055,8 +1055,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1205354996021298}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -1092, y: 2, z: -5.583984}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1077.43, y: 8.07, z: -5.583984}
+  m_LocalScale: {x: 0.8557873, y: 0.82265973, z: 1}
   m_Children:
   - {fileID: 4912482926928606}
   - {fileID: 4980462691419860}
@@ -1135,12 +1135,12 @@ Camera:
     x: 0.4
     y: 0
     width: 0.1
-    height: 1
+    height: 0.8
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.436424
+  orthographic size: 9.004932
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -1723,6 +1723,7 @@ MonoBehaviour:
   health: 100
   maxWaterLevel: 100
   waterLevel: 0
+  WholeShip1: {fileID: 0}
 --- !u!114 &114121622808353706
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1750,6 +1751,7 @@ MonoBehaviour:
   health: 100
   maxWaterLevel: 100
   waterLevel: 0
+  WholeShip1: {fileID: 0}
 --- !u!114 &114155151451468870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1830,6 +1832,7 @@ MonoBehaviour:
   health: 100
   maxWaterLevel: 100
   waterLevel: 0
+  WholeShip1: {fileID: 0}
 --- !u!114 &114278795314888292
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1845,6 +1848,7 @@ MonoBehaviour:
   health: 100
   maxWaterLevel: 100
   waterLevel: 0
+  WholeShip1: {fileID: 0}
 --- !u!114 &114288673154986320
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1888,6 +1892,7 @@ MonoBehaviour:
   health: 100
   maxWaterLevel: 100
   waterLevel: 0
+  WholeShip1: {fileID: 0}
 --- !u!114 &114362435822339984
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1915,6 +1920,7 @@ MonoBehaviour:
   health: 100
   maxWaterLevel: 100
   waterLevel: 0
+  WholeShip1: {fileID: 0}
 --- !u!114 &114406690120823688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1974,6 +1980,7 @@ MonoBehaviour:
   health: 100
   maxWaterLevel: 100
   waterLevel: 0
+  WholeShip1: {fileID: 0}
 --- !u!114 &114535664527027094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1989,6 +1996,7 @@ MonoBehaviour:
   health: 100
   maxWaterLevel: 100
   waterLevel: 0
+  WholeShip1: {fileID: 0}
 --- !u!114 &114569770042535226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2109,6 +2117,7 @@ MonoBehaviour:
   health: 100
   maxWaterLevel: 100
   waterLevel: 0
+  WholeShip1: {fileID: 0}
 --- !u!114 &114941806025971246
 MonoBehaviour:
   m_ObjectHideFlags: 1

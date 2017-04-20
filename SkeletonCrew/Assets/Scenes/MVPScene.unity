@@ -1490,6 +1490,16 @@ Prefab:
       propertyPath: m_NormalizedViewPortRect.height
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 114193257260119600, guid: 8ec755dd5e545dd4c99208ed90741a52,
+        type: 2}
+      propertyPath: waterLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114384353520044918, guid: 8ec755dd5e545dd4c99208ed90741a52,
+        type: 2}
+      propertyPath: waterLevel
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ec755dd5e545dd4c99208ed90741a52, type: 2}
   m_IsPrefabParent: 0
@@ -4476,68 +4486,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1896862632076714, guid: 945af5153456303478bce4d0030d0f21, type: 2}
-      propertyPath: m_TagString
-      value: RoomCollider
-      objectReference: {fileID: 0}
-    - target: {fileID: 1217207513136130, guid: 945af5153456303478bce4d0030d0f21, type: 2}
-      propertyPath: m_TagString
-      value: RoomCollider
-      objectReference: {fileID: 0}
-    - target: {fileID: 1111708279824340, guid: 945af5153456303478bce4d0030d0f21, type: 2}
-      propertyPath: m_TagString
-      value: RoomCollider
-      objectReference: {fileID: 0}
-    - target: {fileID: 1317148520388556, guid: 945af5153456303478bce4d0030d0f21, type: 2}
-      propertyPath: m_TagString
-      value: RoomCollider
-      objectReference: {fileID: 0}
-    - target: {fileID: 1788038090803116, guid: 945af5153456303478bce4d0030d0f21, type: 2}
-      propertyPath: m_TagString
-      value: RoomCollider
-      objectReference: {fileID: 0}
-    - target: {fileID: 1928789925767320, guid: 945af5153456303478bce4d0030d0f21, type: 2}
-      propertyPath: m_TagString
-      value: RoomCollider
-      objectReference: {fileID: 0}
-    - target: {fileID: 1293459612883324, guid: 945af5153456303478bce4d0030d0f21, type: 2}
-      propertyPath: m_TagString
-      value: RoomCollider
-      objectReference: {fileID: 0}
-    - target: {fileID: 1972055247184700, guid: 945af5153456303478bce4d0030d0f21, type: 2}
-      propertyPath: m_TagString
-      value: RoomCollider
-      objectReference: {fileID: 0}
-    - target: {fileID: 1171997396561248, guid: 945af5153456303478bce4d0030d0f21, type: 2}
-      propertyPath: m_TagString
-      value: RoomCollider
-      objectReference: {fileID: 0}
-    - target: {fileID: 4946799365989278, guid: 945af5153456303478bce4d0030d0f21, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 8.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 4946799365989278, guid: 945af5153456303478bce4d0030d0f21, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.8557873
-      objectReference: {fileID: 0}
-    - target: {fileID: 4946799365989278, guid: 945af5153456303478bce4d0030d0f21, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -1077.43
-      objectReference: {fileID: 0}
-    - target: {fileID: 4946799365989278, guid: 945af5153456303478bce4d0030d0f21, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.82265973
-      objectReference: {fileID: 0}
-    - target: {fileID: 20786276592135294, guid: 945af5153456303478bce4d0030d0f21,
+    - target: {fileID: 114345862173415210, guid: 945af5153456303478bce4d0030d0f21,
         type: 2}
-      propertyPath: orthographic size
-      value: 9.004932
+      propertyPath: waterLevel
+      value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 20786276592135294, guid: 945af5153456303478bce4d0030d0f21,
+    - target: {fileID: 1650810882480516, guid: 945af5153456303478bce4d0030d0f21, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 114345862173415210, guid: 945af5153456303478bce4d0030d0f21,
         type: 2}
-      propertyPath: m_NormalizedViewPortRect.height
-      value: 0.8
-      objectReference: {fileID: 0}
+      propertyPath: WholeShip1
+      value: 
+      objectReference: {fileID: 1650810882480516, guid: 945af5153456303478bce4d0030d0f21,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 945af5153456303478bce4d0030d0f21, type: 2}
   m_IsPrefabParent: 0
