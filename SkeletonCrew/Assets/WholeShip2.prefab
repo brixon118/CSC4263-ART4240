@@ -609,6 +609,7 @@ GameObject:
   - component: {fileID: 50998318237697252}
   - component: {fileID: 114028107216504432}
   - component: {fileID: 114373702187401584}
+  - component: {fileID: 114566225527978812}
   m_Layer: 0
   m_Name: ShipOutside
   m_TagString: ShipOutside
@@ -1785,7 +1786,7 @@ MonoBehaviour:
   maxWaterLevel: 100
   waterLevel: 0
   shipNumber: 2
-  shipOutside: {fileID: 0}
+  shipOutside: {fileID: 1846343083171526}
 --- !u!114 &114028107216504432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1843,7 +1844,7 @@ MonoBehaviour:
   maxWaterLevel: 100
   waterLevel: 0
   shipNumber: 2
-  shipOutside: {fileID: 0}
+  shipOutside: {fileID: 1846343083171526}
 --- !u!114 &114131521578248948
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1860,7 +1861,7 @@ MonoBehaviour:
   maxWaterLevel: 100
   waterLevel: 0
   shipNumber: 2
-  shipOutside: {fileID: 0}
+  shipOutside: {fileID: 1846343083171526}
 --- !u!114 &114142574022651242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1913,7 +1914,7 @@ MonoBehaviour:
   maxWaterLevel: 100
   waterLevel: 0
   shipNumber: 2
-  shipOutside: {fileID: 0}
+  shipOutside: {fileID: 1846343083171526}
 --- !u!114 &114204016959233612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1998,7 +1999,7 @@ MonoBehaviour:
   maxWaterLevel: 100
   waterLevel: 0
   shipNumber: 2
-  shipOutside: {fileID: 0}
+  shipOutside: {fileID: 1846343083171526}
 --- !u!114 &114429217374764162
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2092,6 +2093,19 @@ MonoBehaviour:
   speed: 2
   controlled: 1
   shipRoot: {fileID: 1355027446138962}
+--- !u!114 &114566225527978812
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1846343083171526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d84a96206b6d09459eaf9b1364be77c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScrap: 0
+  player1: 0
 --- !u!114 &114653620506190396
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2108,7 +2122,7 @@ MonoBehaviour:
   maxWaterLevel: 100
   waterLevel: 0
   shipNumber: 2
-  shipOutside: {fileID: 0}
+  shipOutside: {fileID: 1846343083171526}
 --- !u!114 &114722320905514406
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2196,7 +2210,7 @@ MonoBehaviour:
   maxWaterLevel: 100
   waterLevel: 0
   shipNumber: 2
-  shipOutside: {fileID: 0}
+  shipOutside: {fileID: 1846343083171526}
 --- !u!114 &114857712250039072
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2226,7 +2240,7 @@ MonoBehaviour:
   maxWaterLevel: 100
   waterLevel: 0
   shipNumber: 2
-  shipOutside: {fileID: 0}
+  shipOutside: {fileID: 1846343083171526}
 --- !u!114 &114883978573013270
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2258,7 +2272,7 @@ MonoBehaviour:
   maxWaterLevel: 100
   waterLevel: 0
   shipNumber: 2
-  shipOutside: {fileID: 0}
+  shipOutside: {fileID: 1846343083171526}
 --- !u!124 &124291313378576298
 Behaviour:
   m_ObjectHideFlags: 1
