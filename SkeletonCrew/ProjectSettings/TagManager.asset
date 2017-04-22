@@ -14,7 +14,13 @@ TagManager:
   - Hallway-LeftToBack
   - Room
   - RoomCollider
+<<<<<<< HEAD
   - FlakableBullet
+||||||| merged common ancestors
+=======
+  - FlakableBullet
+  - WholeShip1
+>>>>>>> master
   layers:
   - Default
   - TransparentFX
