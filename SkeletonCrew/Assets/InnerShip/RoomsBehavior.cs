@@ -36,7 +36,7 @@ public class RoomsBehavior : MonoBehaviour {
 
 	void Respawn()
 	{
-		Destroy (transform.parent.parent.gameObject, 2.0f);
+		Destroy (transform.parent.parent.gameObject, 3.0f);
 		//yield return new WaitForSeconds (5.0f);
 		WholeShip1 = (GameObject)Instantiate (WholeShip1, new Vector3 (-81, 45, 0), Quaternion.identity) as GameObject;
 		//transform.parent.gameObject = spawnPoint.position;
