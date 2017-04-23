@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -67,4 +67,3 @@ public class FlakScript : MonoBehaviour {
         audio.Play(44100);
     }
 }
-

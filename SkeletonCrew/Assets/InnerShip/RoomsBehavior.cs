@@ -7,39 +7,71 @@ public class RoomsBehavior : MonoBehaviour {
     public float health = 100;
     public float maxWaterLevel = 100;
     public float waterLevel = 0;
-	public GameObject WholeShip1;
+    public int shipNumber = 0;
+    public GameObject shipOutside;
+    ScrapStorage storage;
+    bool repairable = false;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
+        storage = shipOutside.GetComponent<ScrapStorage>();
         InvokeRepeating("UpdateEverySecond", 0, 1.0f);
-
     }
 	
 	// Update is called once per frame
 	void Update () {
         GetComponent<SpriteRenderer>().color = new Color(1.0f, health/100, health/100, 1f);
+        
     }
 
     // Updates every second
     void UpdateEverySecond()
     {
-        if (health <= (maxHealth / 2) && !(waterLevel >= maxWaterLevel))
+        if (health <= (maxHealth / 2))
         {
-            waterLevel++;
+            if (waterLevel < maxWaterLevel)
+            {
+                waterLevel++;
+            }
+            
         }
-		if (waterLevel >= 100) {
-			waterLevel = 0;
-			if(gameObject != null)
-				Respawn ();
-		}
+        else if(waterLevel > 0)
+        {
+            waterLevel--;
+        }
+
+        if (repairable && storage.currentScrap % 200 > 4 && health < maxHealth)
+        {
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+            audio.Play(44100);
+            storage.currentScrap -= 5;
+            health += 5;
+        }
     }
 
-	void Respawn()
-	{
-		Destroy (transform.parent.parent.gameObject, 3.0f);
-		//yield return new WaitForSeconds (5.0f);
-		WholeShip1 = (GameObject)Instantiate (WholeShip1, new Vector3 (-81, 45, 0), Quaternion.identity) as GameObject;
-		//transform.parent.gameObject = spawnPoint.position;
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        PlayersController player = collision.gameObject.GetComponent<PlayersController>();
+        if (player.controlled)
+        {
+            if (Input.GetAxisRaw("LeftTriggerController" + ((shipNumber * 3) - 2 + player.playerNumber)) == 1)
+            {
+                repairable = true;
+                collision.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+            }
+            else
+            {
+                repairable = false;
+                collision.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+            }
+            
+        }
+        else
+        {
+            repairable = false;
+        }
+    }
 
-	}
 }
