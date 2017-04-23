@@ -41,7 +41,7 @@ public class RoomsBehavior : MonoBehaviour {
             waterLevel--;
         }
 
-        if (repairable && storage.currentScrap > 4 && health < maxHealth)
+        if (repairable && storage.currentScrap % 200 > 4 && health < maxHealth)
         {
             AudioSource audio = GetComponent<AudioSource>();
             audio.Play();
@@ -54,9 +54,19 @@ public class RoomsBehavior : MonoBehaviour {
     private void OnTriggerStay2D(Collider2D collision)
     {
         PlayersController player = collision.gameObject.GetComponent<PlayersController>();
-        if (player.controlled && Input.GetAxisRaw("LeftTriggerController" + ((shipNumber * 3) - 2 + player.playerNumber)) == 1)
+        if (player.controlled)
         {
-            repairable = true;
+            if (Input.GetAxisRaw("LeftTriggerController" + ((shipNumber * 3) - 2 + player.playerNumber)) == 1)
+            {
+                repairable = true;
+                collision.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+            }
+            else
+            {
+                repairable = false;
+                collision.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+            }
+            
         }
         else
         {

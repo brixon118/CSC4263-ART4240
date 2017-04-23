@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1845977804848126}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 67.02588, y: 29.616558, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -225,5 +225,7 @@ MonoBehaviour:
   ship1Prefab: {fileID: 1650810882480516, guid: 945af5153456303478bce4d0030d0f21,
     type: 2}
   ship2: {fileID: 0}
-  ship2Prefab: {fileID: 1355027446138962, guid: 8ec755dd5e545dd4c99208ed90741a52,
-    type: 2}
+  ship2Prefab: {fileID: 0}
+  respawnTime: 3
+  respawnX: 100
+  respawnY: 40
