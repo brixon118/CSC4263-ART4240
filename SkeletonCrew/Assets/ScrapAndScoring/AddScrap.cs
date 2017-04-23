@@ -5,6 +5,7 @@ using UnityEngine;
 public class AddScrap : MonoBehaviour {
     bool canInvoke = true;
     public int nodeWorth = 5;
+    public int total = 100;
 	// Use this for initialization
 	void Start () {
 		
@@ -12,7 +13,7 @@ public class AddScrap : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        gameController.playerTwoScrap++;
+        //gameController.playerTwoScrap++;
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -21,9 +22,22 @@ public class AddScrap : MonoBehaviour {
         {
             //gameController.playerOneScrap++;
             collision.GetComponent<ScrapStorage>().currentScrap += nodeWorth;
+            total -= nodeWorth;
             canInvoke = false;
             Invoke("UpdateEverySecond", 1.0f);
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "ShipOutside")
+        {
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+            audio.Play(44100);
+        }
+
+
     }
 
     void UpdateEverySecond()

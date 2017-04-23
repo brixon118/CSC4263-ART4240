@@ -62,5 +62,8 @@ public class FlakScript : MonoBehaviour {
     void rFire()
     {
         Instantiate(gunBullet, transform.position + transform.right - Vector3.forward, transform.rotation);
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.Play();
+        audio.Play(44100);
     }
 }

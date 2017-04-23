@@ -41,10 +41,13 @@ public class RoomsBehavior : MonoBehaviour {
             waterLevel--;
         }
 
-        if (repairable && storage.currentScrap > 0 && health < maxHealth)
+        if (repairable && storage.currentScrap > 4 && health < maxHealth)
         {
-            storage.currentScrap--;
-            health++;
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+            audio.Play(44100);
+            storage.currentScrap -= 5;
+            health += 5;
         }
     }
 
