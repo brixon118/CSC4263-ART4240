@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class gameController : MonoBehaviour {
-    public static int playerOneScrap = 995;
-    public static int playerTwoScrap = 1000;
+    public static int playerOneScrap = 0;
+    public static int playerTwoScrap = 0;
     public int scoreLimit = 1000;
     public GameObject ship1;
     public GameObject ship1Prefab;
@@ -28,7 +28,7 @@ public class gameController : MonoBehaviour {
         {
             if (playerTwoScrap >= scoreLimit)
             {
-                SceneManager.LoadScene("playerTwoWins");
+                SceneManager.LoadScene("MVPScene");
             }
             else if (canSpawn1)
             {
@@ -92,6 +92,14 @@ public class gameController : MonoBehaviour {
             {
                 y *= -1;
             }
+        }
+        if (playerTwoScrap > 800)
+        {
+            playerTwoScrap = 800;
+        }
+        else
+        {
+            playerTwoScrap -= playerTwoScrap % 200;
         }
 
         ship2 = Instantiate(ship2Prefab, new Vector3(x, y, 0), transform.rotation);

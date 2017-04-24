@@ -13,6 +13,8 @@ public class Death : MonoBehaviour {
     public GameObject room8;
     public GameObject room9;
     public GameObject scrapNodePrefab;
+    public GameObject scrapNode;
+    public GameObject shipOutside;
     public bool ship1 = true;
     // Use this for initialization
     void Start () {
@@ -31,15 +33,16 @@ public class Death : MonoBehaviour {
             || room8.GetComponent<RoomsBehavior>().waterLevel >= room8.GetComponent<RoomsBehavior>().maxWaterLevel
             || room9.GetComponent<RoomsBehavior>().waterLevel >= room9.GetComponent<RoomsBehavior>().maxWaterLevel)
         {
+            Vector3 outsideVector = shipOutside.GetComponent<Transform>().position;
+            scrapNode = Instantiate(scrapNodePrefab, outsideVector, shipOutside.GetComponent<Transform>().rotation);
             if (ship1)
             {
-                scrapNodePrefab.GetComponent<AddScrap>().total = gameController.playerOneScrap % 200;
+                scrapNode.GetComponent<AddScrap>().total = gameController.playerOneScrap % 200;
             }
             else
             {
-                scrapNodePrefab.GetComponent<AddScrap>().total = gameController.playerTwoScrap % 200;
+                scrapNode.GetComponent<AddScrap>().total = gameController.playerTwoScrap % 200;
             }
-            Instantiate(scrapNodePrefab, this.gameObject.transform.GetChild (0).transform);
             Destroy(this.gameObject);
         }
         

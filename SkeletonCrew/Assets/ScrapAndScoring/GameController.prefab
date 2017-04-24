@@ -221,11 +221,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2d051631f6fd6b41b9be87017a2a9e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreLimit: 1000
   ship1: {fileID: 0}
   ship1Prefab: {fileID: 1650810882480516, guid: 945af5153456303478bce4d0030d0f21,
     type: 2}
   ship2: {fileID: 0}
-  ship2Prefab: {fileID: 0}
+  ship2Prefab: {fileID: 1160114042412148, guid: 4febc843f1aa63d44a84765dd5a9c091,
+    type: 2}
   respawnTime: 3
   respawnX: 100
   respawnY: 40

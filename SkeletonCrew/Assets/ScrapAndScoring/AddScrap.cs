@@ -6,6 +6,7 @@ public class AddScrap : MonoBehaviour {
     bool canInvoke = true;
     public int nodeWorth = 5;
     public int total = 100;
+    public bool scrapLeft = true;
 	// Use this for initialization
 	void Start () {
 		
@@ -13,14 +14,14 @@ public class AddScrap : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //gameController.playerTwoScrap++;
+        scrapLeft = total > 0;
+        GetComponent<SpriteRenderer>().enabled = scrapLeft;
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (canInvoke && collision.tag == "ShipOutside")
+        if (canInvoke && collision.tag == "ShipOutside" && scrapLeft)
         {
-            //gameController.playerOneScrap++;
             collision.GetComponent<ScrapStorage>().currentScrap += nodeWorth;
             total -= nodeWorth;
             canInvoke = false;
@@ -36,8 +37,6 @@ public class AddScrap : MonoBehaviour {
             audio.Play();
             audio.Play(44100);
         }
-
-
     }
 
     void UpdateEverySecond()

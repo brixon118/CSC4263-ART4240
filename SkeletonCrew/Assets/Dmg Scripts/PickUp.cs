@@ -9,9 +9,15 @@ public class PickUp : MonoBehaviour {
     public float rotationRate = 50;
     public GameObject gunBullet;
     public bool left = true;
+    public float timeOn = 20;
+    public float timeOff = 60;
+    public float timeToBegin = 1;
+    bool usable = false;
 	// Use this for initialization
 	void Start () {
-		
+        GetComponent<SpriteRenderer>().flipX = left;
+        GetComponent<SpriteRenderer>().enabled = false;
+        Invoke("available", timeToBegin);
 	}
 	
 	// Update is called once per frame
@@ -21,8 +27,11 @@ public class PickUp : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "ShipOutside")
+        if (usable && collision.tag == "ShipOutside")
         {
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+            audio.Play(44100);
             if (left)
             {
                 collision.GetComponent<GunList>().leftGun.GetComponent<Gun>().upperLimit = upperLimit + 180;
@@ -39,8 +48,22 @@ public class PickUp : MonoBehaviour {
                 collision.GetComponent<GunList>().rightGun.GetComponent<Gun>().gunBullet = gunBullet;
                 collision.GetComponent<GunList>().rightGun.GetComponent<Gun>().rotationRate = rotationRate;
             }
-            Destroy(this.gameObject);
+            notAvailable();
         }
 
+    }
+
+    private void available()
+    {
+        usable = true;
+        GetComponent<SpriteRenderer>().enabled = true;
+        Invoke("notAvailable", timeOn);
+    }
+
+    private void notAvailable()
+    {
+        usable = false;
+        GetComponent<SpriteRenderer>().enabled = false;
+        Invoke("available", timeOff);
     }
 }

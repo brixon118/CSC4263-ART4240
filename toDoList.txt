@@ -1,6 +1,6 @@
 background
 flak
 flooding
-death screen
 game over screen
-fix repairing
+ship sink
+projectile collide sfx
