@@ -150,13 +150,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upperLimit: 50
   lowerLimit: -50
-  fireRate: 0.1
+  fireRate: 0.2
   rotationRate: 25
   gunBullet: {fileID: 1596677706742896, guid: 8e1453f95ba5c4148a5e6064229b9604, type: 2}
   left: 1
-  timeOn: 20
+  timeOn: 30
   timeOff: 60
-  timeToBegin: 1
+  timeToBegin: 0
+  replacementSprite: {fileID: 0}
 --- !u!212 &212209428233080152
 SpriteRenderer:
   m_ObjectHideFlags: 1

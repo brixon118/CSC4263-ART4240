@@ -12,6 +12,7 @@ public class PickUp : MonoBehaviour {
     public float timeOn = 20;
     public float timeOff = 60;
     public float timeToBegin = 1;
+    public Sprite replacementSprite;
     bool usable = false;
 	// Use this for initialization
 	void Start () {
@@ -39,6 +40,10 @@ public class PickUp : MonoBehaviour {
                 collision.GetComponent<GunList>().leftGun.GetComponent<Gun>().fireRate = fireRate;
                 collision.GetComponent<GunList>().leftGun.GetComponent<Gun>().gunBullet = gunBullet;
                 collision.GetComponent<GunList>().leftGun.GetComponent<Gun>().rotationRate = rotationRate;
+                if(replacementSprite != null)
+                {
+                    collision.GetComponent<GunList>().leftGun.GetComponent<SpriteRenderer>().sprite = replacementSprite;
+                }
             }
             else
             {
@@ -47,6 +52,10 @@ public class PickUp : MonoBehaviour {
                 collision.GetComponent<GunList>().rightGun.GetComponent<Gun>().fireRate = fireRate;
                 collision.GetComponent<GunList>().rightGun.GetComponent<Gun>().gunBullet = gunBullet;
                 collision.GetComponent<GunList>().rightGun.GetComponent<Gun>().rotationRate = rotationRate;
+                if (replacementSprite != null)
+                {
+                    collision.GetComponent<GunList>().rightGun.GetComponent<SpriteRenderer>().sprite = replacementSprite;
+                }
             }
             notAvailable();
         }

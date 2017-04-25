@@ -9,6 +9,10 @@ public class RoomsBehavior : MonoBehaviour {
     public float waterLevel = 0;
     public int shipNumber = 0;
     public GameObject shipOutside;
+    public float floodingSpeed = 10;
+    public float drainingSpeed = 5;
+    public float repairRate = 10;
+    public int repairCost = 5;
     ScrapStorage storage;
     bool repairable = false;
 
@@ -32,13 +36,13 @@ public class RoomsBehavior : MonoBehaviour {
         {
             if (waterLevel < maxWaterLevel)
             {
-                waterLevel++;
+                waterLevel += floodingSpeed * waterLevel / maxWaterLevel;
             }
             
         }
         else if(waterLevel > 0)
         {
-            waterLevel--;
+            waterLevel -= drainingSpeed;
         }
 
         if (repairable && storage.currentScrap % 200 > 4 && health < maxHealth)
@@ -46,8 +50,8 @@ public class RoomsBehavior : MonoBehaviour {
             AudioSource audio = GetComponent<AudioSource>();
             audio.Play();
             audio.Play(44100);
-            storage.currentScrap -= 5;
-            health += 5;
+            storage.currentScrap -= repairCost;
+            health += repairRate;
         }
     }
 

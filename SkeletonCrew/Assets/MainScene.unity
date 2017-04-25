@@ -1585,11 +1585,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!4 &322896705 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4204139986296732, guid: 4febc843f1aa63d44a84765dd5a9c091,
-    type: 2}
-  m_PrefabInternal: {fileID: 480489648}
 --- !u!1 &329938334
 GameObject:
   m_ObjectHideFlags: 0
@@ -3327,58 +3322,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1001 &702196340
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 322896705}
-    m_Modifications:
-    - target: {fileID: 4447787000073682, guid: 36cc7afb396b8394a94e4b7db9449fff, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 9.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 4447787000073682, guid: 36cc7afb396b8394a94e4b7db9449fff, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4447787000073682, guid: 36cc7afb396b8394a94e4b7db9449fff, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4447787000073682, guid: 36cc7afb396b8394a94e4b7db9449fff, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4447787000073682, guid: 36cc7afb396b8394a94e4b7db9449fff, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4447787000073682, guid: 36cc7afb396b8394a94e4b7db9449fff, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4447787000073682, guid: 36cc7afb396b8394a94e4b7db9449fff, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4447787000073682, guid: 36cc7afb396b8394a94e4b7db9449fff, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114745775919866622, guid: 36cc7afb396b8394a94e4b7db9449fff,
-        type: 2}
-      propertyPath: shipRoot
-      value: 
-      objectReference: {fileID: 825511026}
-    - target: {fileID: 114745775919866622, guid: 36cc7afb396b8394a94e4b7db9449fff,
-        type: 2}
-      propertyPath: room
-      value: 
-      objectReference: {fileID: 757152996}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 36cc7afb396b8394a94e4b7db9449fff, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &734667217
 GameObject:
   m_ObjectHideFlags: 0
@@ -3443,11 +3386,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1 &757152996 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1285256364523408, guid: 4febc843f1aa63d44a84765dd5a9c091,
-    type: 2}
-  m_PrefabInternal: {fileID: 480489648}
 --- !u!1 &764343779
 GameObject:
   m_ObjectHideFlags: 0
@@ -6873,6 +6811,11 @@ Prefab:
       propertyPath: timeToBegin
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 212209428233080152, guid: a822bda04d7ab80428edd247e3258452,
+        type: 2}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a822bda04d7ab80428edd247e3258452, type: 2}
   m_IsPrefabParent: 0
@@ -8503,6 +8446,11 @@ Prefab:
     - target: {fileID: 114128862136621720, guid: 450ec8ca40ca25b459d0355031cb38d6,
         type: 2}
       propertyPath: left
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212160880682974020, guid: 450ec8ca40ca25b459d0355031cb38d6,
+        type: 2}
+      propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12141,6 +12089,11 @@ Prefab:
         type: 2}
       propertyPath: timeToBegin
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 212160880682974020, guid: 450ec8ca40ca25b459d0355031cb38d6,
+        type: 2}
+      propertyPath: m_FlipX
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 450ec8ca40ca25b459d0355031cb38d6, type: 2}

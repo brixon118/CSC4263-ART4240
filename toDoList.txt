@@ -1,6 +1,12 @@
-background
-flak
+background animation
 flooding
 game over screen
 ship sink
 projectile collide sfx
+Wake
+menu
+room symbols
+build
+wiki
+quit midgame
+Ship2

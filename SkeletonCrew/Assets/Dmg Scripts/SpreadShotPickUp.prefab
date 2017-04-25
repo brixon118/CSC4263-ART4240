@@ -154,9 +154,10 @@ MonoBehaviour:
   rotationRate: 25
   gunBullet: {fileID: 1529910455122054, guid: ddbb3d0885a10e04994d1545513c9733, type: 2}
   left: 1
-  timeOn: 20
+  timeOn: 30
   timeOff: 60
-  timeToBegin: 1
+  timeToBegin: 60
+  replacementSprite: {fileID: 0}
 --- !u!212 &212160880682974020
 SpriteRenderer:
   m_ObjectHideFlags: 1
