@@ -16,7 +16,6 @@ public class RoomsBehavior : MonoBehaviour {
     public int repairCost = 5;
     ScrapStorage storage;
     bool repairable = false;
-    public Slider waterMeter;
 
     // Use this for initialization
     void Start()
@@ -38,7 +37,7 @@ public class RoomsBehavior : MonoBehaviour {
         {
             if (waterLevel < maxWaterLevel)
             {
-                waterLevel += floodingSpeed * waterLevel / maxWaterLevel;
+                waterLevel += floodingSpeed * ( 1 - (health / maxHealth));
             }
             
         }
@@ -55,8 +54,6 @@ public class RoomsBehavior : MonoBehaviour {
             storage.currentScrap -= repairCost;
             health += repairRate;
         }
-
-        waterMeter.value = waterLevel;
     }
 
     private void OnTriggerStay2D(Collider2D collision)

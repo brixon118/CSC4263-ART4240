@@ -12,6 +12,7 @@ public class Rottationtatetttsee : MonoBehaviour
     public float velocityDegrees;
     public float currentZ;
     public float rotationRate = 50;
+    public Wake wake;
     // Use this for initialization
     void Start()
     {
@@ -38,5 +39,15 @@ public class Rottationtatetttsee : MonoBehaviour
             }
         }
         GetComponent<Rigidbody2D>().velocity = (transform.up * ((30 * Input.GetAxis("LeftTriggerController" + ((shipNumber * 3) - 2 + playerControlled)) + 0.0001f)));
+        float i = 30 * Input.GetAxis("LeftTriggerController" + ((shipNumber * 3) - 2 + playerControlled));
+
+        if (i == 0f)
+        {
+            wake.shrink();
+        }
+        else
+        {
+            wake.grow();
+        }
     }
 }

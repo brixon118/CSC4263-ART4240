@@ -28,7 +28,7 @@ public class gameController : MonoBehaviour {
         {
             if (playerTwoScrap >= scoreLimit)
             {
-                SceneManager.LoadScene("MVPScene");
+                SceneManager.LoadScene("P2 win");
             }
             else if (canSpawn1)
             {
@@ -40,7 +40,7 @@ public class gameController : MonoBehaviour {
         {
             if (playerOneScrap >= scoreLimit)
             {
-                SceneManager.LoadScene("MVPScene");
+                SceneManager.LoadScene("P1 win");
             }
             else if (canSpawn2)
             {

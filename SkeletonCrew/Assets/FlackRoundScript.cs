@@ -10,9 +10,12 @@ public class FlackRoundScript : MonoBehaviour {
     public GameObject room;
 	// Use this for initialization
 	void Start () {
-        AudioSource audio = GetComponent<AudioSource>();
-        audio.Play();
-        audio.Play(44100);
+        if(on)
+        {
+            AudioSource audio = GetComponent<AudioSource>();
+            audio.Play();
+            audio.Play(44100);
+        }
         shipNumber = shipRoot.GetComponent<ShipNumber>().shipNumber;
     }
 	
