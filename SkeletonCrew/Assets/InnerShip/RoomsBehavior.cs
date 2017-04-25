@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RoomsBehavior : MonoBehaviour {
     public float maxHealth = 100;
@@ -15,6 +16,7 @@ public class RoomsBehavior : MonoBehaviour {
     public int repairCost = 5;
     ScrapStorage storage;
     bool repairable = false;
+    public Slider waterMeter;
 
     // Use this for initialization
     void Start()
@@ -53,6 +55,8 @@ public class RoomsBehavior : MonoBehaviour {
             storage.currentScrap -= repairCost;
             health += repairRate;
         }
+
+        waterMeter.value = waterLevel;
     }
 
     private void OnTriggerStay2D(Collider2D collision)

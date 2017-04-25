@@ -74,7 +74,6 @@ GameObject:
   - component: {fileID: 212558089710185350}
   - component: {fileID: 82475580601381204}
   - component: {fileID: 114425807194746388}
-  - component: {fileID: 50028919436405174}
   - component: {fileID: 61776374423869224}
   m_Layer: 0
   m_Name: FlakExplosion
@@ -1239,26 +1238,6 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
---- !u!50 &50028919436405174
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1105989561744092}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 0
-  m_CollisionDetection: 1
-  m_Constraints: 0
 --- !u!50 &50418563948550052
 Rigidbody2D:
   serializedVersion: 4
@@ -3140,6 +3119,10 @@ MonoBehaviour:
   waterLevel: 0
   shipNumber: 2
   shipOutside: {fileID: 1203713791199412}
+  floodingSpeed: 10
+  drainingSpeed: 5
+  repairRate: 10
+  repairCost: 5
 --- !u!114 &114278080646395252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3170,6 +3153,10 @@ MonoBehaviour:
   waterLevel: 0
   shipNumber: 2
   shipOutside: {fileID: 1203713791199412}
+  floodingSpeed: 10
+  drainingSpeed: 5
+  repairRate: 10
+  repairCost: 5
 --- !u!114 &114362588506320732
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3187,6 +3174,10 @@ MonoBehaviour:
   waterLevel: 0
   shipNumber: 2
   shipOutside: {fileID: 1203713791199412}
+  floodingSpeed: 10
+  drainingSpeed: 5
+  repairRate: 10
+  repairCost: 5
 --- !u!114 &114383212216737234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3269,6 +3260,10 @@ MonoBehaviour:
   waterLevel: 0
   shipNumber: 2
   shipOutside: {fileID: 1203713791199412}
+  floodingSpeed: 10
+  drainingSpeed: 5
+  repairRate: 10
+  repairCost: 5
 --- !u!114 &114465827514116316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3327,6 +3322,10 @@ MonoBehaviour:
   waterLevel: 0
   shipNumber: 2
   shipOutside: {fileID: 1203713791199412}
+  floodingSpeed: 10
+  drainingSpeed: 5
+  repairRate: 10
+  repairCost: 5
 --- !u!114 &114500365436517092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3344,6 +3343,10 @@ MonoBehaviour:
   waterLevel: 0
   shipNumber: 2
   shipOutside: {fileID: 1203713791199412}
+  floodingSpeed: 10
+  drainingSpeed: 5
+  repairRate: 10
+  repairCost: 5
 --- !u!114 &114515263787927514
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3407,6 +3410,10 @@ MonoBehaviour:
   waterLevel: 0
   shipNumber: 2
   shipOutside: {fileID: 1203713791199412}
+  floodingSpeed: 10
+  drainingSpeed: 5
+  repairRate: 10
+  repairCost: 5
 --- !u!114 &114535921539566446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3462,6 +3469,10 @@ MonoBehaviour:
   waterLevel: 0
   shipNumber: 2
   shipOutside: {fileID: 1203713791199412}
+  floodingSpeed: 10
+  drainingSpeed: 5
+  repairRate: 10
+  repairCost: 5
 --- !u!114 &114666739064762468
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3505,6 +3516,10 @@ MonoBehaviour:
   waterLevel: 0
   shipNumber: 2
   shipOutside: {fileID: 1203713791199412}
+  floodingSpeed: 10
+  drainingSpeed: 5
+  repairRate: 10
+  repairCost: 5
 --- !u!114 &114863501623419508
 MonoBehaviour:
   m_ObjectHideFlags: 1
