@@ -16,10 +16,13 @@ public class gameController : MonoBehaviour {
     private bool canSpawn2 = true;
     public float respawnX = 100;
     public float respawnY = 40;
+    
     // Use this for initialization
     void Start () {
         playerOneScrap = 0;
         playerTwoScrap = 0;
+        respawnShip1();
+        respawnShip2();
 }
 	
 	// Update is called once per frame
@@ -29,6 +32,8 @@ public class gameController : MonoBehaviour {
         {
             if (playerTwoScrap >= scoreLimit)
             {
+                Destroy(ship1);
+                Destroy(ship2);
                 SceneManager.LoadScene("P2 win");
             }
             else if (canSpawn1)
@@ -41,6 +46,8 @@ public class gameController : MonoBehaviour {
         {
             if (playerOneScrap >= scoreLimit)
             {
+                Destroy(ship1);
+                Destroy(ship2);
                 SceneManager.LoadScene("P1 win");
             }
             else if (canSpawn2)
@@ -53,6 +60,7 @@ public class gameController : MonoBehaviour {
 
     private void respawnShip1()
     {
+        
         float x = -respawnX;
         float y = -respawnY;
         if (ship2 != null)

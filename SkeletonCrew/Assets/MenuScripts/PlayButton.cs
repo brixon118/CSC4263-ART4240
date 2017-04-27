@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class PlayButton : MonoBehaviour {
     public bool buttonActive = false;
-    public bool canLoad = true;
+    public bool canLoad = false;
 	// Use this for initialization
 	void Start () {
         //SceneManager.LoadSceneAsync("MainScene", LoadSceneMode.Additive);
+        Invoke("switchCanLoad", 1.0f);
 	}
 	
 	// Update is called once per frame
@@ -26,5 +27,12 @@ public class PlayButton : MonoBehaviour {
                 
             //}
         }
+
+
+    }
+
+    private void switchCanLoad()
+    {
+        canLoad = true;
     }
 }

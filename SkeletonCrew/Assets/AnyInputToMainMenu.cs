@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class AnyInputToMainMenu : MonoBehaviour
 {
-    public bool canLoad = true;
+    public bool canLoad = false;
 	void Start ()
     {
-		
-	}
+        Invoke("switchCanLoad", 2.0f);
+    }
 	
 	void Update ()
     {
@@ -39,6 +39,11 @@ public class AnyInputToMainMenu : MonoBehaviour
                 SceneManager.LoadScene("MainMenu");
             }
         }
+    }
+
+    private void switchCanLoad()
+    {
+        canLoad = true;
     }
 
 }
