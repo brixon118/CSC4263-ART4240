@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AddScrap : MonoBehaviour {
     bool canInvoke = true;
-    public int nodeWorth = 5;
+    public int nodeWorth = 20;
     public int total = 100;
     public bool scrapLeft = true;
 	// Use this for initialization

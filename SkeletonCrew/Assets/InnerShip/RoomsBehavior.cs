@@ -12,8 +12,8 @@ public class RoomsBehavior : MonoBehaviour {
     public GameObject shipOutside;
     public float floodingSpeed = 10;
     public float drainingSpeed = 5;
-    public float repairRate = 10;
-    public int repairCost = 5;
+    public float repairRate = 20;
+    public int repairCost = 10;
     ScrapStorage storage;
     bool repairable = false;
 
