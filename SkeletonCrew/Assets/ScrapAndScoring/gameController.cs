@@ -18,8 +18,9 @@ public class gameController : MonoBehaviour {
     public float respawnY = 40;
     // Use this for initialization
     void Start () {
-
-	}
+        playerOneScrap = 0;
+        playerTwoScrap = 0;
+}
 	
 	// Update is called once per frame
 	void Update () {
