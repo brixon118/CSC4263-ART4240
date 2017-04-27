@@ -1,0 +1,132 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4600 (ID=0x416)
+    Vendor:   Intel
+    VRAM:     1114 MB
+    Driver:   20.19.15.4531
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Triston\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\SkeletonCrew_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Triston\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\SkeletonCrew_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Triston\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\SkeletonCrew_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Triston\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\SkeletonCrew_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Triston\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\SkeletonCrew_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Triston\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\SkeletonCrew_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Triston\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\SkeletonCrew_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Triston\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\SkeletonCrew_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Triston\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\SkeletonCrew_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Triston\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\SkeletonCrew_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.025 seconds
+Platform assembly: C:\Users\Triston\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\SkeletonCrew_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Triston\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\SkeletonCrew_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 4.086666 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.331004 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1594.
+Total: 0.585031 ms (FindLiveObjects: 0.106913 ms CreateObjectMapping: 0.065431 ms MarkObjects: 0.393014 ms  DeleteObjects: 0.019244 ms)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2b58 -> priority: 1 
+  Thread -> id: 33a4 -> priority: 1 
