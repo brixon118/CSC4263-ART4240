@@ -66,6 +66,7 @@ public class PickUp : MonoBehaviour {
     {
         usable = true;
         GetComponent<SpriteRenderer>().enabled = true;
+        //GetComponent<AudioSource>().enabled = true;
         Invoke("notAvailable", timeOn);
     }
 
@@ -73,6 +74,7 @@ public class PickUp : MonoBehaviour {
     {
         usable = false;
         GetComponent<SpriteRenderer>().enabled = false;
+        //GetComponent<AudioSource>().enabled = false;
         Invoke("available", timeOff);
     }
 }

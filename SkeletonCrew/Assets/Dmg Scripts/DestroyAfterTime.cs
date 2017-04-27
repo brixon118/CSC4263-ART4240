@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DestroyAfterTime : MonoBehaviour {
 
-    public float time = 2.0f;
+    public float time = 1f;
 
     // Use this for initialization
     void Start () {

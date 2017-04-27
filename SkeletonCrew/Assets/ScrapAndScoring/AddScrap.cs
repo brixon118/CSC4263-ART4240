@@ -16,6 +16,7 @@ public class AddScrap : MonoBehaviour {
 	void Update () {
         scrapLeft = total > 0;
         GetComponent<SpriteRenderer>().enabled = scrapLeft;
+        GetComponent<AudioSource>().enabled = scrapLeft;
     }
 
     private void OnTriggerStay2D(Collider2D collision)

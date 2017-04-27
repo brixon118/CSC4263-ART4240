@@ -150,7 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upperLimit: 50
   lowerLimit: -50
-  fireRate: 0.2
+  fireRate: 0.275
   rotationRate: 25
   gunBullet: {fileID: 1596677706742896, guid: 8e1453f95ba5c4148a5e6064229b9604, type: 2}
   left: 1
