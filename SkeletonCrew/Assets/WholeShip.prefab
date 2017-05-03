@@ -1221,7 +1221,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1650810882480516}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -55.943176, y: -15.360637, z: 6.5839844}
+  m_LocalPosition: {x: -85.89216, y: -33.73147, z: 6.5839844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4304866310624488}
@@ -3457,9 +3457,9 @@ MonoBehaviour:
   room7: {fileID: 1832983455625894}
   room8: {fileID: 1332968584161344}
   room9: {fileID: 1440098990840308}
-  scrapNodePrefab: {fileID: 1513544615461414, guid: 844b582f5d0a52e428821149ac5c40a4,
+  sinkShipPrefab: {fileID: 1626156120018186, guid: 17d4498454fe2e14a9d11fabea834248,
     type: 2}
-  scrapNode: {fileID: 0}
+  shipSink: {fileID: 0}
   shipOutside: {fileID: 1191911130577032}
   ship1: 1
 --- !u!114 &114199053704799916

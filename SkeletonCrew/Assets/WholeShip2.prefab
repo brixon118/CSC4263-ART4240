@@ -1122,7 +1122,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1160114042412148}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35.96809, y: -9.707308, z: -3.9}
+  m_LocalPosition: {x: -757.1659, y: -149.6201, z: -3.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4868713026024988}
@@ -3624,9 +3624,9 @@ MonoBehaviour:
   room7: {fileID: 1060390697402564}
   room8: {fileID: 1753159885732872}
   room9: {fileID: 1667161683772702}
-  scrapNodePrefab: {fileID: 1513544615461414, guid: 844b582f5d0a52e428821149ac5c40a4,
+  sinkShipPrefab: {fileID: 1626156120018186, guid: 17d4498454fe2e14a9d11fabea834248,
     type: 2}
-  scrapNode: {fileID: 0}
+  shipSink: {fileID: 0}
   shipOutside: {fileID: 1203713791199412}
   ship1: 0
 --- !u!114 &114474491602155428
@@ -5392,7 +5392,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b7bba86dfb474d2488e2be3769ac9d95, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1044f910ff7cc6e4cbfdfee2ac574911, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
