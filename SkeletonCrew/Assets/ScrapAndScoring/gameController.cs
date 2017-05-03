@@ -7,6 +7,7 @@ public class gameController : MonoBehaviour {
     public static int playerOneScrap = 0;
     public static int playerTwoScrap = 0;
     public int scoreLimit = 1000;
+    public int finalDrop = 200;
     public GameObject ship1;
     public GameObject ship1Prefab;
     public GameObject ship2;
@@ -74,9 +75,9 @@ public class gameController : MonoBehaviour {
                 y *= -1;
             }
         }
-        if (playerOneScrap > 800)
+        if (playerOneScrap > scoreLimit)
         {
-            playerOneScrap = 800;
+            playerOneScrap = scoreLimit - finalDrop;
         }
         else
         {
@@ -102,9 +103,9 @@ public class gameController : MonoBehaviour {
                 y *= -1;
             }
         }
-        if (playerTwoScrap > 800)
+        if (playerTwoScrap > scoreLimit)
         {
-            playerTwoScrap = 800;
+            playerTwoScrap = scoreLimit - finalDrop;
         }
         else
         {

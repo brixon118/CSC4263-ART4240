@@ -21,6 +21,14 @@ public class UpdateScore : MonoBehaviour {
         {
             score = gameController.playerTwoScrap;
         }
+        if (score >= 500)
+        {
+            GetComponent<Text>().color = new Color(1, 1, 0);
+        }
+        else
+        {
+            GetComponent<Text>().color = new Color(1, 1, 1);
+        }
         GetComponent<Text>().text = "Scrap: " + score;
 	}
 }

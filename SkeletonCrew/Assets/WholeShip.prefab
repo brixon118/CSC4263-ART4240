@@ -1221,7 +1221,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1650810882480516}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.6, y: -0.32631922, z: 6.5839844}
+  m_LocalPosition: {x: -55.943176, y: -15.360637, z: 6.5839844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4304866310624488}
@@ -3475,6 +3475,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerControlled: 0
   shipRoot: {fileID: 1650810882480516}
+  ssssprite: {fileID: 21300000, guid: ded6a7e16d12ff541b179bd6425ee795, type: 3}
+  originalssssprite: {fileID: 0}
 --- !u!114 &114204390613416934
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3597,6 +3599,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerControlled: 0
   shipRoot: {fileID: 1650810882480516}
+  ssssprite: {fileID: 21300000, guid: ded6a7e16d12ff541b179bd6425ee795, type: 3}
+  originalssssprite: {fileID: 0}
 --- !u!114 &114345862173415210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3788,6 +3792,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerControlled: 0
   shipRoot: {fileID: 1650810882480516}
+  ssssprite: {fileID: 21300000, guid: ded6a7e16d12ff541b179bd6425ee795, type: 3}
+  originalssssprite: {fileID: 0}
 --- !u!114 &114650928032606904
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3891,6 +3897,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerControlled: 0
   shipRoot: {fileID: 1650810882480516}
+  ssssprite: {fileID: 21300000, guid: ded6a7e16d12ff541b179bd6425ee795, type: 3}
+  originalssssprite: {fileID: 0}
 --- !u!114 &114829883874619692
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3904,6 +3912,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerControlled: 0
   shipRoot: {fileID: 1650810882480516}
+  ssssprite: {fileID: 21300000, guid: ded6a7e16d12ff541b179bd6425ee795, type: 3}
+  originalssssprite: {fileID: 0}
 --- !u!114 &114928486993398588
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3927,8 +3937,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e813d7c5c7a9744f968688236f69015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  health: 100
+  maxHealth: 200
+  health: 200
   maxWaterLevel: 100
   waterLevel: 0
   shipNumber: 1

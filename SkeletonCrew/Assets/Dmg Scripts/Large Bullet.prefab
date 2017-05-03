@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
-  dmg: 60
+  dmg: 30
   explosion: {fileID: 21300000, guid: bc4d5e8742759504ca3743b2330430fd, type: 3}
   bulletLife: 3
 --- !u!212 &212652778727958522

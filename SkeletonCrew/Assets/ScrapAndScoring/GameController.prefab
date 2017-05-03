@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 82527621340917988}
   - component: {fileID: 82122629526750474}
   - component: {fileID: 81534963646289144}
+  - component: {fileID: 114186680542256038}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -221,7 +222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2d051631f6fd6b41b9be87017a2a9e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreLimit: 1000
+  scoreLimit: 500
+  finalDrop: 100
   ship1: {fileID: 0}
   ship1Prefab: {fileID: 1650810882480516, guid: 945af5153456303478bce4d0030d0f21,
     type: 2}
@@ -231,3 +233,14 @@ MonoBehaviour:
   respawnTime: 3
   respawnX: 100
   respawnY: 40
+--- !u!114 &114186680542256038
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1845977804848126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e2817b0e9f3334ab431c31b591a836, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
