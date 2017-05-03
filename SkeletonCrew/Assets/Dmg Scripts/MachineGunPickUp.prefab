@@ -157,7 +157,7 @@ MonoBehaviour:
   timeOn: 30
   timeOff: 60
   timeToBegin: 0
-  replacementSprite: {fileID: 0}
+  replacementSprite: {fileID: 21300000, guid: 4f0ca104f8195814baf8a9b9f6ac443e, type: 3}
 --- !u!212 &212209428233080152
 SpriteRenderer:
   m_ObjectHideFlags: 1
