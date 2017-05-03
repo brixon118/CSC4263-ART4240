@@ -1,0 +1,419 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon (TM) R9 360 (ID=0x665f)
+    Vendor:   ATI
+    VRAM:     2025 MB
+    Driver:   21.19.519.2
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\brixo\OneDrive\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\skeleTest_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\brixo\OneDrive\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\skeleTest_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\brixo\OneDrive\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\skeleTest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\brixo\OneDrive\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\skeleTest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\brixo\OneDrive\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\skeleTest_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\brixo\OneDrive\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\skeleTest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\brixo\OneDrive\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\skeleTest_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\brixo\OneDrive\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\skeleTest_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\brixo\OneDrive\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\skeleTest_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\brixo\OneDrive\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\skeleTest_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.058 seconds
+Platform assembly: C:\Users\brixo\OneDrive\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\skeleTest_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\brixo\OneDrive\Documents\GitHub\CSC4263-ART4240\SkeletonCrew\skeleTest_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 59Hz; virtual: 3200x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.605354 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.663429 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1132.
+Total: 0.875942 ms (FindLiveObjects: 0.148514 ms CreateObjectMapping: 0.102103 ms MarkObjects: 0.561814 ms  DeleteObjects: 0.061555 ms)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Joystick connected ("Controller (Xbox 360 Wireless Receiver for Windows)").
+ 
+(Filename:  Line: 1351)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Joystick connected ("Controller (Xbox 360 Wireless Receiver for Windows)").
+ 
+(Filename:  Line: 1351)
+
+Joystick connected ("Controller (Xbox 360 Wireless Receiver for Windows)").
+ 
+(Filename:  Line: 1351)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Delayed playback via the optional argument of Play is deprecated. Use PlayDelayed instead!
+ 
+(Filename:  Line: 916)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 30f0 -> priority: 1 

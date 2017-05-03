@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +13,7 @@ public class FlakScript : MonoBehaviour {
     public float velocityDegrees;
     public float currentZ;
     public float rotationRate = 50;
-    public float fireRate = 0.5f;
+    public float fireRate = 0.1f;
     private bool canFire = true;
     public bool toggleRotation = true;
 
@@ -67,4 +67,3 @@ public class FlakScript : MonoBehaviour {
         audio.Play(44100);
     }
 }
-

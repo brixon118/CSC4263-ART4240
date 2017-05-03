@@ -15,6 +15,8 @@ TagManager:
   - Room
   - RoomCollider
   - FlakableBullet
+  - ShipOutside
+  - PickUp
   layers:
   - Default
   - TransparentFX

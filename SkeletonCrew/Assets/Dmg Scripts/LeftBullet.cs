@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class LeftBullet : MonoBehaviour {
 
-    public float speed = 5;
+    public float speed = 250;
     private bool triggerUp = true;
-    public float dmg = 10;
-    public GameObject gunBullet;
     private Vector2 bulletPath;
-    public float bulletLife = 0.5f;
+    public float bulletLife = 0.1f;
 
     // Use this for initialization
     void Start()
@@ -27,7 +25,7 @@ public class LeftBullet : MonoBehaviour {
 
     public void detonate()
     {
-        Instantiate(gunBullet, transform.position - Vector3.forward, transform.rotation);
+        
         Destroy(gameObject);
     }
 

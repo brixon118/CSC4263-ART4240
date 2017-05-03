@@ -26,6 +26,9 @@ public class AOEProjDmg : MonoBehaviour
             if (col.CompareTag("RoomCollider"))
             {
                 col.GetComponent<TagDamage>().ApplyDamage(dmg);
+                AudioSource audio = GetComponent<AudioSource>();
+                audio.Play();
+                audio.Play(44100);
             }
         }
     }

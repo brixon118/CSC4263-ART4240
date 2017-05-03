@@ -1,12 +1,8 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Gun : MonoBehaviour {
-
-
-
-
 
     private Vector2 velocity;
     private int playerControlled;
@@ -45,28 +41,9 @@ public class Gun : MonoBehaviour {
                 Invoke("setCanFire", fireRate);
             }
             
-
-
-/*
-            if (Input.GetAxisRaw("LeftTriggerController" + ((shipNumber * 3) - 2 + playerControlled)) == 1)
-            {
-                if (triggerUp)
-                {
-                    rBullet.GetComponent<rightBullet>().detonate();
-                    triggerUp = false;
-                }
-            }
-            else
-            {
-                triggerUp = true;
-            }
-*/
-
-
             velocity = new Vector2(Input.GetAxis("LeftHorizontalController" + ((shipNumber * 3) - 2 + playerControlled)), Input.GetAxis("LeftVerticalController" + ((shipNumber * 3) - 2 + playerControlled)));
             velocityDegrees = -Mathf.Atan2(-velocity.normalized.x, velocity.normalized.y) * Mathf.Rad2Deg;
             
-
             if (!velocity.Equals(Vector2.zero) && toggleRotation)
             {
                 if (velocityDegrees < 0 && currentZ < upperLimit)
