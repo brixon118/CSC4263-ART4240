@@ -274,6 +274,7 @@ GameObject:
   - component: {fileID: 724584854}
   - component: {fileID: 724584855}
   - component: {fileID: 724584856}
+  - component: {fileID: 724584857}
   m_Layer: 0
   m_Name: about button
   m_TagString: Untagged
@@ -343,6 +344,20 @@ MonoBehaviour:
   active: 0
   vertVal: 0
   switchRate: 0.3
+--- !u!114 &724584857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 724584853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a2cbabf1bef54048a1e03ecdc0eeaf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonActive: 0
+  canLoad: 0
+  sceneName: AboutScene
 --- !u!1 &869068745
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,6 +602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonActive: 0
   canLoad: 1
+  sceneName: MainScene
 --- !u!1 &1946666176
 GameObject:
   m_ObjectHideFlags: 0

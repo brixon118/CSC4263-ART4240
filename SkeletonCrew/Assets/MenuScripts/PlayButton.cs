@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayButton : MonoBehaviour {
     public bool buttonActive = false;
     public bool canLoad = false;
+    public string sceneName;
 	// Use this for initialization
 	void Start () {
         //SceneManager.LoadSceneAsync("MainScene", LoadSceneMode.Additive);
@@ -21,7 +22,7 @@ public class PlayButton : MonoBehaviour {
             //{
             if (canLoad && (Input.GetButtonDown("LeftBumperController2") || Input.GetButtonDown("LeftBumperController3") || Input.GetButtonDown("LeftBumperController5") || Input.GetButtonDown("LeftBumperController6") || Input.GetAxisRaw("LeftTriggerController2") > 0 || Input.GetAxisRaw("LeftTriggerController3") > 0 || Input.GetAxisRaw("LeftTriggerController5") > 0 || Input.GetAxisRaw("LeftTriggerController6") > 0))
             {
-                SceneManager.LoadScene("MainScene");
+                SceneManager.LoadScene(sceneName);
                 canLoad = false;  
             }
                 
